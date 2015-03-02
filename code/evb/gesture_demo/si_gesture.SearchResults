@@ -1,0 +1,3 @@
+---- PARAM_CH_LIST Matches (2 in 2 files) ----
+Si114x_functions.h (source):#define PARAM_CH_LIST             0x01
+Si114x_init.c (source):   retval+=Si114xParamSet(si114x_handle, PARAM_CH_LIST, tasklist);

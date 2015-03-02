@@ -1,0 +1,253 @@
+/* Add margin to align elements to the grid. This margin also controls footer */
+.block-inner, .breadcrumb, .region-help, .messages, #primary-nav, #secondary-nav, #breadcrumb, #main-content > header, #branding, #attribution { margin-left: 10px; margin-right: 10px; }
+
+.container footer .region-footer .block-inner { margin-left: 0px; margin-right: 0px; }
+
+/*aligning footer with content columns */
+/* Strip block margin inside content column area */
+.content-inner .block { margin: 0; }
+
+/* Grids. */
+.grid-1-half, .grid-1, .grid-2-12, .grid-120, .grid-2-16, .grid-3, .grid-4-16, .grid-4-12, .grid-5, .grid-5-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .fgrid-6, .fgrid-6bigger, .fgrid-5, .fgrid-4, .fgrid-3, .fgrid-3-column, .fgrid-2, .fgrid-wide, .mgrid-1 { float: left; clear: none !important; display: inline; }
+
+.grid-1 { width: 40px; }
+
+.grid-1-half { width: 80px; }
+
+.grid-2-16 { width: 100px; }
+
+.grid-120 { width: 120px; }
+
+.grid-2-12 { width: 140px; }
+
+.grid-3 { width: 160px; }
+
+.grid-4-16 { width: 220px; }
+
+.grid-4-12 { width: 300px; }
+
+.grid-5 { width: 280px; }
+
+.grid-5-5 { width: 285px; }
+
+.grid-6 { width: 340px; }
+
+.grid-7 { width: 400px; }
+
+.grid-8 { width: 460px; }
+
+.grid-9 { width: 520px; }
+
+.grid-10 { width: 580px; }
+
+.grid-11 { width: 640px; }
+
+.grid-12 { width: 700px; }
+
+.grid-13 { width: 760px; }
+
+.grid-14 { width: 820px; }
+
+.grid-15 { width: 880px; }
+
+.grid-16 { width: 940px; }
+
+/* Fluid grids */
+.fgrid-6 { width: 16.67%; }
+
+.fgrid-6bigger { width: 17%; }
+
+.fgrid-5 { width: 20%; }
+
+.fgrid-4 { width: 25%; }
+
+.fgrid-3 { width: 33.33%; }
+
+.fgrid-3-column { width: 30%; margin-right: 3%; }
+
+.fgrid-2 { width: 50%; }
+
+.fgrid-wide { width: 75%; }
+
+.mgrid-1 { width: 5em; /*added to create space for TOPICS */ }
+
+/* Grid offsets - an offset = grid-width + gutter */
+.go-10px { margin-left: 1em; }
+
+.go-20px { margin-left: 1.539em; }
+
+.go-1 { margin-left: 60px; }
+
+.pos-r.go-1 { margin-left: 0; margin-right: 60px; }
+
+.go-2-16 { margin-left: 120px; }
+
+.pos-r.go-2-16 { margin-left: 0; margin-right: 120px; }
+
+.go-2-12 { margin-left: 160px; }
+
+.pos-r.go-2-12 { margin-left: 0; margin-right: 160px; }
+
+.go-3 { margin-left: 180px; }
+
+.pos-r.go-3 { margin-left: 0; margin-right: 180px; }
+
+.go-4-16 { margin-left: 240px; }
+
+.pos-r.go-4-16 { margin-left: 0; margin-right: 240px; }
+
+.go-5 { margin-left: 300px; }
+
+.pos-r.go-5 { margin-left: 0; margin-right: 300px; }
+
+.go-4-12 { margin-left: 320px; }
+
+.pos-r.go-4-12 { margin-left: 0; margin-right: 320px; }
+
+.fgo-8 { margin-left: 5%; }
+
+.fgo-6 { margin-left: 16.67%; }
+
+.pos-r.fgo-6 { margin-left: 0; margin-right: 16.67%; }
+
+.fgo-5 { margin-left: 20%; }
+
+.pos-r.fgo-5 { margin-left: 0; margin-right: 20%; }
+
+.fgo-4 { margin-left: 25%; }
+
+.pos-r.fgo-4 { margin-left: 0; margin-right: 25%; }
+
+.fgo-3 { margin-left: 33.33%; }
+
+.pos-r.fgo-3 { margin-left: 0; margin-right: 33.33%; }
+
+/* GPanels */
+.gpanel { clear: both; }
+.gpanel .region { display: inline; position: relative; float: left; }
+
+.two-33-66 .region-two-33-66-second { width: 66.333%; }
+
+.two-66-33 .region-two-66-33-first { width: 66.666%; }
+
+.five-5x20 .region { width: 20%; }
+.five-5x20 .region-five-fifth { width: 19.75%; }
+
+.six-6x16 .region { width: 16.666%; }
+.six-6x16 .region-six-sixth { width: 16.333%; }
+
+.two-50 .region-two-50-first, .three-50-25-25 .region-three-50-25-25-first { width: 50%; }
+
+.two-50 .region-two-50-second, .three-25-25-50 .region-three-25-25-50-third { width: 49.5%; }
+
+.two-33-66 .region, .two-66-33 .region { float: left; }
+
+.two-33-66 .region-two-33-66-first, .three-3x33 .region { width: 33.333%; }
+
+.two-66-33 .region-two-66-33-second, .three-3x33 .region-three-33-third { width: 33%; }
+
+.three-25-25-50 .region-three-25-25-50-first, .three-25-25-50 .region-three-25-25-50-second { width: 25%; }
+
+.three-50-25-25 .region-three-50-25-25-second, .four-4x25 .region { width: 25%; }
+
+.three-50-25-25 .region-three-50-25-25-third, .four-4x25 .region-four-fourth { width: 24.5%; }
+
+/* vertical spacing */
+p.vertical-space, .vertical-space { margin-top: 0.77em; margin-bottom: 0.77em; }
+
+.push-down-0 { margin-bottom: 0.33em; }
+
+.push-down-1 { margin-bottom: 0.77em; }
+
+.push-down-2 { margin-bottom: 1.538em; }
+
+.push-down-3 { margin-bottom: 2.307em; }
+
+.push-down-4 { margin-bottom: 3.07em; }
+
+.push-down-5 { margin-bottom: 3.846em; }
+
+.push-down-6 { margin-bottom: 4.615em; }
+
+.nudge-down-1 { margin-bottom: 0.313em; }
+
+/* Block positioning */
+.pos-c { float: none; display: block; margin-left: auto !important; margin-right: auto !important; }
+
+.pos-r { float: right; }
+
+.pos-cf { float: none; clear: both; display: block; }
+
+/*Block title */
+.m-title h2.pane-title, .pane-disqus-disqus-comments h2.pane-title { margin: 0px 0px 1.154em -12px; }
+
+.m-title h2.block-title { margin: 0px -12px 1.154em 0px; }
+
+/*************** PANNELS *************** */
+.block-panels_mini { padding: 0; }
+
+#subscription-newsletter-mainContent fieldset, #subscription-newsletter-mainContent form { margin: 0; }
+
+/*padding:.77em; */
+div.panels-flexible-the_lead_features div.panels-flexible-region-the_lead_features-the_lead___features, div.panels-flexible-row-inside div.panels-flexible-region-the_lead_features-center { width: auto; }
+
+/*100% doesn't work for CED and MNET */
+/*************** REGIONS *************** */
+.top-stories { margin-top: 1.54em; }
+.top-stories div.panel-pane { margin-top: 0em; }
+
+.panel-pane { margin-top: 1.539em; }
+
+/*footer */
+footer .footer-links { margin-top: 1em; }
+footer div.region-footer .footer-links div.block-content ul li { margin: 0 0 0.539em 0; }
+
+div.region-footer section.stand-out-box { position: relative; right: -6px; top: 5px; }
+
+.top-stories h2.pane-title { padding: 0 0.25em; margin: 0em; position: relative; top: -10px; }
+.top-stories div.panel-separator { margin: 0 0 1.539em; }
+
+/* Content alignment */
+/* Centered */
+.ca-c { text-align: center; margin: 0; }
+.ca-c ul.menu, .ca-c .item-list ul { text-align: center; margin: 0; }
+.ca-c ul.menu li, .ca-c .item-list ul li { list-style: none; margin: 0; }
+
+/* left */
+.ca-l { text-align: left; margin: 0 1em 0 0; /*0.5 */ }
+.ca-l ul.menu, .ca-l .item-list ul { text-align: left; margin: 0 1em 0 0; /*0.5 */ }
+
+/* Right */
+.ca-r { text-align: right; /*margin:0; */ }
+.ca-r ul.menu, .ca-r .item-list ul { text-align: right; /*margin:0; */ }
+
+/* Imagefield positioning */
+.ai-l { float: left; margin: 1em 1em 1em 0em; }
+.ai-l .field-type-image { float: left; margin: 1em 1em 1em 0em; }
+
+.ai-r .field-type-image { float: right; }
+
+.ai-b { padding: 0; overflow: hidden; }
+.ai-b .block-inner { padding: 0; overflow: hidden; }
+.ai-b .block-content { padding: 0; overflow: hidden; }
+.ai-b .block-content p, .ai-b .block-content div.field-type-image { padding: 0; margin: 0; line-height: 0; }
+
+#main-content, #columns { display: inline-block; width: 100%; }
+
+#main-content, .block { position: relative; }
+
+.content-inner > #main-content, #page > #columns { display: block; }
+
+#content-column, .region-sidebar-first, .region-sidebar-second, .at-horizontal-login label, .left { float: left; }
+
+.clear, #columns, #breadcrumb, #content-bottom, #secondary-content, #tertiary-content, #footer, #footer-region, #footer-message, .block, .pos-cf, #block-admin-display-form { clear: both; }
+
+#columns { padding-top: 2%; }
+
+/* New clearfix */
+.clearfix:after { content: " "; clear: both; display: block; font-size: 0; height: 0; width: 0; visibility: hidden; }
+
+* html .clearfix { zoom: 1; /* IE6 */ }
+*:first-child + html .clearfix { zoom: 1; /* IE7 */ }
+
+.last { margin-right: 0px; }

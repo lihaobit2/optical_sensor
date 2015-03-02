@@ -1,0 +1,31 @@
+{
+
+var google_ads = new Array();
+var google_ad;
+var google_radlinks = new Array();
+var google_radlink;
+var google_info = new Object();
+google_ad = {}; 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = ""; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=C1z8wJdkiVK3uE5GD9gXT7YD4BdO4gcIFq4HxwM4By8Xj7roCEAEg1JraBVDq39vO_P____8BYJ2h34HYBcgBAakCl5Kk-lbhhT6oAwGqBHhP0I9_oj9UTSkF8cLYGNfXfg6GBY57RTWhw48s7Ldaatyd7aZnnRc8k7KRCn4WnwgEPjbx3XFgkvRHmNwJIO4SayaxMHBza-joSQuxpT0_BDR-xfYWElGBDbxKYak2BYj8Ai6BmcMp2UXhpRXZKvikoUhvOT6OiUmAB8OUqA8&amp;num=1&amp;sig=AOD64_3-ixzQ9OddATAdCW0ltK6wDrh19Q&amp;client=ca-pub-9066977823953139&amp;adurl=http://tracker.marinsm.com/rd%3Fcid%3D6484iki26001%26mkwid%3DcLq9t53sE%26pcrid%3D55371146067%26pkw%3D%26pmt%3D%26pdv%3Dc%26lp%3Dhttp%253A%252F%252Fwww.ctrip.com%252Fadredirect.asp%253Fkeyword%253Ddjwmrmk_D294%2526src%253Dgoogle310"; 
+google_ad.visible_url = "www.ctrip.com"; 
+google_ad.log_info = "Bzjw4JdkiVK3uE5GD9gXT7YD4BQCrgfHAzgEAABABOAHIAQGoE4AB";
+google_ad.activeview_js_immediate_enabled = "true";
+google_ad.line1 = "\x26#25658;\x26#31243;\x26#19996;\x26#20140; \x26#26053;\x26#28216;\x26#25915;\x26#30053;"; 
+google_ad.line2 = "\x26#25658;\x26#31243;\x26#28216;\x26#35760;\x26#25915;\x26#30053;\x26#22823;\x26#20840;\x26#65292;\x26#36208;\x26#24515;\x26#23454;\x26#29992;\x26#29256;\x26#12290;"; 
+google_ad.line3 = "\x26#26080;\x26#31934;\x26#21326;\x26#19981;\x26#20856;\x26#34255;\x26#65292;\x26#30475;\x26#23436;\x26#25915;\x26#30053;\x26#20877;\x26#20986;\x26#34892;\x26#65281;"; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_info.feedback_url = "https://www.google.com/url?ct\x3dabg\x26q\x3dhttps://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://www.cnbeta.com/articles/189970.htm%26gl%3DCN%26hl%3Dzh%26client%3Dca-pub-9066977823953139%26ai0%3DC1z8wJdkiVK3uE5GD9gXT7YD4BdO4gcIFq4HxwM4By8Xj7roCEAEg1JraBVDq39vO_P____8BYJ2h34HYBcgBAakCl5Kk-lbhhT6oAwGqBHhP0I9_oj9UTSkF8cLYGNfXfg6GBY57RTWhw48s7Ldaatyd7aZnnRc8k7KRCn4WnwgEPjbx3XFgkvRHmNwJIO4SayaxMHBza-joSQuxpT0_BDR-xfYWElGBDbxKYak2BYj8Ai6BmcMp2UXhpRXZKvikoUhvOT6OiUmAB8OUqA8\x26usg\x3dAFQjCNFktTiKWC8WIuNaLMCgoEC5rBjzvA";
+var google_attribution_text = "Google 提供的广告";
+var google_is_rtl = false;
+if (window.google_ad_request_done) {
+google_ad_request_done(google_ads);
+}
+if (window.google_radlink_request_done) {
+google_radlink_request_done(google_radlinks);
+}
+}

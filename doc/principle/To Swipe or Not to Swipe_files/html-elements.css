@@ -1,0 +1,145 @@
+/**
+ * $Id: html-elements.css,v 1.1.4.5 2010/12/01 21:47:54 jmburnz Exp $
+ */
+html {
+  font-size: 81.3%; /* 16px x 81.3% = 13px */
+}
+body {
+  font-family: Verdana,Geneva,"DejaVu Sans",sans-serif;  /*"Gill Sans", Calibri, "Trebuchet MS", sans-serif*/;
+  line-height: 1.5; /* Unit-less line-height means line height can scale. */
+}
+/* Sizes match proper font scaling. */
+h1, h4, .headline {font-family: Georgia, Times New Roman, Times, serif; font-weight: bold;}
+h1, #headline-h1 {
+  font-size: 1.847em; }
+
+h2 {
+   font-size:1.385em;
+}
+  h2.block-title-main-accent{
+    font-weight: normal;
+    padding: 3px;
+  }
+h3 {
+  font-size: 1.231em;
+}
+h4 {
+  font-size: 1.077em;
+}
+h5,
+h6 {
+  font-size: 1em;
+}
+a img {
+  border:none; background-color: transparent !important;
+}
+a:link {}
+a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+a:active{}
+
+
+  h1 a {text-decoration: none;}
+
+p {
+  margin: 0 0 1.5em 0;  /*0 0 1.5em;  0 0 .77 0*/
+  padding: 0;
+}
+
+em,
+dfn {
+  font-style: italic;
+}
+ins {
+  border-bottom: none;
+  text-decoration: none;
+}
+pre,
+code,
+tt,
+samp,
+kbd,
+var {
+  font-size: 1em;
+  font-family: Consolas, "Lucida Console", Menlo, Monaco, "DejaVu Sans Mono", monospace, sans-serif; /* Safari hack */
+}
+blockquote,
+q {
+  font-style:italic;
+  quotes:"" "";
+}
+blockquote {
+  margin: 0 0 1.5em;
+  padding: 0 0 0 3em;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content:"";
+}
+blockquote p {
+  margin: 0;
+}
+strong,
+dfn,
+caption,
+th {
+  font-weight: 700;
+}
+
+/* Lists */
+ul,
+ol {
+  margin: 0 0 1.5em 2em; /*0 0 1.5em 1em*/
+  padding:0;
+}
+
+.item-list ul,
+.item-list ol {
+  margin: 0 0 0 1em;
+  padding: 0;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul,
+.block ul ul,
+.block ul ol,
+.block ol ol,
+.block ol ul,
+.item-list ul ul,
+.item-list ul ol,
+.item-list ol ol,
+.item-list ol ul {
+  margin-bottom: 0;
+}
+
+  
+ul {
+  list-style-type: square;
+}
+ul ul ul {
+  list-style-type: disc;
+}
+ol {
+  list-style-type: decimal;
+}
+ol ol {
+  list-style-type: lower-alpha;
+}
+ol ol ol {
+  list-style-type: lower-roman;
+}
+ul ul,
+ul ul ul ul {
+  list-style-type: circle;
+}
+dt {
+  font-weight: 700;
+}
+dd {
+  margin: 0 0 1.5em 1.538em;
+}
+
+iframe {border: 0 none;}

@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe -->
+<html lang="en" dir="ltr" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#" class="js"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script id="LR1" type="text/javascript" async="" src="./To Swipe or Not to Swipe_files/client.js"></script><script type="text/javascript" async="true" id="true" src="./To Swipe or Not to Swipe_files/views2.json"></script><script type="text/javascript" src="./To Swipe or Not to Swipe_files/shares.json"></script><script type="text/javascript" src="./To Swipe or Not to Swipe_files/zh-cn.js"></script><script type="text/javascript" src="./To Swipe or Not to Swipe_files/counter020.js"></script><script type="text/javascript" src="./To Swipe or Not to Swipe_files/widgets.js"></script><script type="text/javascript" async="async" src="./To Swipe or Not to Swipe_files/GlobalContainer.js"></script><script src="./To Swipe or Not to Swipe_files/quant.js" async="" type="text/javascript"></script><script type="text/javascript" src="./To Swipe or Not to Swipe_files/layers078.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<link rel="shortlink" href="http://www.ecnmag.com/node/77642">
+<meta property="og:site_name" content="Electronic Component News">
+<meta property="og:url" content="http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe">
+<link rel="shortcut icon" href="http://www.ecnmag.com/ecn_favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="canonical" href="./To Swipe or Not to Swipe_files/To Swipe or Not to Swipe.htm">
+<meta property="og:type" content="article">
+<meta name="generator" content="Drupal 7 (http://drupal.org)">
+<meta name="abstract" content="Unlike human-to-human gesturing, human-machine gesturing does not have a foundation of thousands of years of history to use as a context. This poses a challenge for human interface system designers. If a user performs a gesture, how does the machine know how to react in a manner that is commensurate with the user’s intentions?">
+<meta name="description" content="Unlike human-to-human gesturing, human-machine gesturing does not have a foundation of thousands of years of history to use as a context. This poses a challenge for human interface system designers. If a user performs a gesture, how does the machine know how to react in a manner that is commensurate with the user’s intentions?">
+<meta name="keywords" content="Silicon Laboratories; Ahsan Javed; human interface technologies; human interface technologies; human-machine gesturing; human interface system; pinch-to-zoom; touchscreen devices; swipe to scroll gesture; touchscreen interfaces; Silicon Labs; IRslider2EK; multi-touch gestures; active infrared sensor; infrared LED; irLED; phase-based gesture sensing; multi-LED proximity sensing; proximity sensing; Microsoft Kinect; Kinect">
+<meta property="og:title" content="To Swipe or Not to Swipe">
+<meta property="og:description" content="Unlike human-to-human gesturing, human-machine gesturing does not have a foundation of thousands of years of history to use as a context. This poses a challenge for human interface system designers. If a user performs a gesture, how does the machine know how to react in a manner that is commensurate with the user’s intentions?">
+<meta property="og:image" content="http://www.ecnmag.com/sites/ecnmag.com/files/Ahsan%20Javed%20thumb.jpg">
+<title>To Swipe or Not to Swipe</title>
+<link type="text/css" rel="stylesheet" href="./To Swipe or Not to Swipe_files/css_pbm0lsQQJ7A7WCCIMgxLho6mI_kBNgznNUWmTWcnfoE.css" media="all">
+<link type="text/css" rel="stylesheet" href="./To Swipe or Not to Swipe_files/css_4dxuO6rN5oVmj0GejIkcTh1q0GOX11SDBH9q0n6rQ_0.css" media="all">
+<link type="text/css" rel="stylesheet" href="./To Swipe or Not to Swipe_files/css_fPl1VypcVkMS7mR8XvDgm2Y3eaQj5qDt3K9xLWgJIcc.css" media="all">
+<link type="text/css" rel="stylesheet" href="./To Swipe or Not to Swipe_files/css_smWejqFexB_rDFKKSWlAeBFeL0wXW7QAXc0ERqON49Y.css" media="screen">
+<link type="text/css" rel="stylesheet" href="./To Swipe or Not to Swipe_files/css_i_jhqXIokMKPiG8olRxBExTs8W6Zpl0QMTBCO3aVjlI.css" media="all">
+
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="http://www.ecnmag.com/sites/ecnmag.com/files/css/css_3NErvbDr-ucM68erbTjrai2TttS9gwbilDVkYGko93Y.css" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="./To Swipe or Not to Swipe_files/css_EOJ2EP3qa5M28nzoZ6sA2niF3XBio2FXVpY5B0n4fiY.css" media="only screen">
+<link type="text/css" rel="stylesheet" href="./To Swipe or Not to Swipe_files/css_-ahASM0oJDDeshL9Fba41NamKM55t2DfB1clTgjtZbg.css" media="all">
+
+<!--[if (lt IE 9)&(!IEMobile 7)]>
+<link type="text/css" rel="stylesheet" href="http://www.ecnmag.com/sites/ecnmag.com/files/css/css_xCBUI9R7HyrGPOi2OaKxpsWDHhSxu3xIGcKD6oEtCuw.css" media="screen" />
+<![endif]-->
+<script async="" src="./To Swipe or Not to Swipe_files/analytics.js"></script><script src="./To Swipe or Not to Swipe_files/js_RC7d2_dhfBsqLAPQvLz26Tw_1pi8VuJA8XTLntJVGuM.js"></script>
+<script>var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];function getDomVariable()
+{
+  return s.eVar22;
+}
+function getsid() {
+  var v = getDomVariable();
+  if (v == undefined || v == "") {
+    return s.c_r("ev22");
+  }
+}
+
+googletag.slots = googletag.slots || {};</script>
+<script src="./To Swipe or Not to Swipe_files/gpt.js"></script>
+<script src="./To Swipe or Not to Swipe_files/js_Cyc-lC6ixML6RkS4RmBegmTl-vUp8PtXmSZmSGOtAFQ.js"></script>
+<script>googletag.slots["small_banner_1"] = googletag.defineSlot("8866/ECN_Small_Banner", [468, 60], "dfp-ad-small_banner_1")
+  .setClickUrl("http://www.ecnmag.com/dfpclick/")
+  .addService(googletag.pubads())
+  .setTargeting("pos", "top");</script>
+<script>googletag.slots["large_rectangle"] = googletag.defineSlot("8866/ECN_Large_Rectangle", [620, 300], "dfp-ad-large_rectangle")
+  .setClickUrl("http://www.ecnmag.com/dfpclick/")
+  .addService(googletag.pubads());</script>
+<script src="./To Swipe or Not to Swipe_files/js_JHlQgchJLv3IvDdNp-rwrmw7VOgyF3I0mVjKgL8WeuU.js"></script>
+<script>googletag.slots["peelback"] = googletag.defineSlot("8866/ECN_Peelback", [1, 1], "dfp-ad-peelback")
+  .setClickUrl("http://www.ecnmag.com/dfpclick/")
+  .addService(googletag.pubads());</script>
+<script>googletag.slots["leaderboard"] = googletag.defineSlot("8866/ECN_Leaderboard", [728, 90], "dfp-ad-leaderboard")
+  .setClickUrl("http://www.ecnmag.com/dfpclick/")
+  .addService(googletag.pubads());</script>
+<script>googletag.slots["pencil_pushdown"] = googletag.defineSlot("8866/ECN_Pencil_Pushdown", [970, 30], "dfp-ad-pencil_pushdown")
+  .setClickUrl("http://www.ecnmag.com/dfpclick/")
+  .addService(googletag.pubads());</script>
+<script>googletag.slots["boombox"] = googletag.defineSlot("8866/ECN_Boombox", [300, 250], "dfp-ad-boombox")
+  .setClickUrl("http://www.ecnmag.com/dfpclick/")
+  .addService(googletag.pubads())
+  .setTargeting("pos", "topright");</script>
+<script>googletag.slots["boombox_2"] = googletag.defineSlot("8866/ECN_Boombox", [300, 250], "dfp-ad-boombox_2")
+  .setClickUrl("http://www.ecnmag.com/dfpclick/")
+  .addService(googletag.pubads())
+  .setTargeting("pos", "midright");</script>
+<script>googletag.slots["tower_half_page"] = googletag.defineSlot("8866/ECN_Tower__Half_Page", [300, 600], "dfp-ad-tower_half_page")
+  .setClickUrl("http://www.ecnmag.com/dfpclick/")
+  .addService(googletag.pubads())
+  .setTargeting("pos", "top");</script>
+<script>googletag.slots["tower_half_page_2"] = googletag.defineSlot("8866/ECN_Tower__Half_Page", [300, 600], "dfp-ad-tower_half_page_2")
+  .setClickUrl("http://www.ecnmag.com/dfpclick/")
+  .addService(googletag.pubads())
+  .setTargeting("pos", "middle");</script>
+<script>googletag.slots["boombox_3"] = googletag.defineSlot("8866/ECN_Boombox", [300, 250], "dfp-ad-boombox_3")
+  .setClickUrl("http://www.ecnmag.com/dfpclick/")
+  .addService(googletag.pubads())
+  .setTargeting("pos", "bottomright");</script>
+<script>googletag.slots["boombox_4"] = googletag.defineSlot("8866/ECN_Boombox", [300, 250], "dfp-ad-boombox_4")
+  .setClickUrl("http://www.ecnmag.com/dfpclick/")
+  .addService(googletag.pubads())
+  .setTargeting("pos", "farbottomright");</script>
+<script>googletag.slots["tower_1"] = googletag.defineSlot("8866/ECN_Tower", [160, 600], "dfp-ad-tower_1")
+  .setClickUrl("http://www.ecnmag.com/dfpclick/")
+  .addService(googletag.pubads())
+  .setTargeting("pos", "top");</script>
+<script>googletag.slots["wallpaper"] = googletag.defineSlot("8866/ECN_Wallpaper", [1, 9], "dfp-ad-wallpaper")
+  .setClickUrl("http://www.ecnmag.com/dfpclick/")
+  .addService(googletag.pubads());</script>
+<script>googletag.cmd.push(function() {
+  googletag.pubads().enableSyncRendering();
+  googletag.pubads().enableSingleRequest();
+  googletag.pubads().collapseEmptyDivs();
+  googletag.pubads().setTargeting("ECN_Topics", ["Design Talk","Newsletters","Sensor Zone","Automotive","Consumer","Wireless","Computing"]);
+  googletag.pubads().setTargeting("url", "http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe");
+});
+googletag.enableServices();</script>
+<script src="./To Swipe or Not to Swipe_files/js_ZwtHh_UtMhEyIZ7P23uU_tO_tZHXgPG1rk11b_m8s9Y.js"></script>
+<script src="./To Swipe or Not to Swipe_files/BrightcoveExperiences.js"></script>
+<script src="./To Swipe or Not to Swipe_files/js_y6_UlqgtQgCAnYTvVCJoyRvKYYiRJLAKRaoLtYR8BWY.js"></script><script src="./To Swipe or Not to Swipe_files/gpt(1).js"></script><script src="./To Swipe or Not to Swipe_files/openV5.js"></script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-875212-1");ga("send", "pageview");</script>
+<script src="./To Swipe or Not to Swipe_files/js_zXWMJylF1EcOy-VSFWEG6qab0yTh2XXhRb3FjHHkyBQ.js"></script>
+<script src="./To Swipe or Not to Swipe_files/js_ku-Cw0PwN8Fg_DHKx2tppS8B_wPcOXapge1Z98iPWaI.js"></script>
+<script></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"adaptivetheme_ecn","theme_token":"jLTQSG-Zdp-tk3BrbflLVbnz1k-e2Cn1EwWZeV2Abxc","js":{"sites\/all\/modules\/custom\/abm_cookies\/s.js":1,"0":1,"1":1,"misc\/jquery.js":1,"misc\/jquery.once.js":1,"2":1,"http:\/\/www.googletagservices.com\/tag\/js\/gpt.js":1,"misc\/drupal.js":1,"3":1,"4":1,"sites\/all\/modules\/contrib\/beautytips\/js\/jquery.bt.min.js":1,"sites\/all\/modules\/contrib\/beautytips\/js\/beautytips.min.js":1,"5":1,"6":1,"7":1,"8":1,"9":1,"10":1,"11":1,"12":1,"13":1,"14":1,"15":1,"16":1,"misc\/progress.js":1,"http:\/\/admin.brightcove.com\/js\/BrightcoveExperiences.js":1,"sites\/all\/modules\/contrib\/fancy_login\/scripts\/fancy_login.js":1,"sites\/all\/modules\/contrib\/image_caption\/image_caption.min.js":1,"sites\/all\/modules\/contrib\/panels\/js\/panels.js":1,"sites\/all\/modules\/custom\/abm_omniture\/disqus.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"17":1,"sites\/all\/modules\/contrib\/quicktabs\/js\/quicktabs.js":1,"sites\/all\/modules\/custom\/abm_submodal\/jquery.cookie.js":1,"sites\/all\/modules\/custom\/abm_submodal\/abm_submodal.js":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme_abm_core\/js\/modal.js":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme_abm_core\/js\/cookie.js":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme_abm_core\/js\/underscore-min.js":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme_abm_core\/js\/jquery.cycle.lite.js":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme_abm_core\/js\/abm-core.js":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme_ecn\/js\/js_ECN.js":1,"18":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/contrib\/calendar_tooltips\/calendar_tooltips.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/logintoboggan\/logintoboggan.css":1,"sites\/all\/modules\/contrib\/mollom\/mollom.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/video_filter\/video_filter.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/fancy_login\/css\/fancy_login.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/all\/modules\/contrib\/panels\/plugins\/layouts\/flexible\/flexible.css":1,"public:\/\/ctools\/css\/e8c523477c0418b2cc3a2cccebc7cb2d.css":1,"sites\/all\/modules\/contrib\/print\/css\/printlinks.css":1,"sites\/all\/modules\/contrib\/quicktabs\/css\/quicktabs.css":1,"sites\/all\/modules\/contrib\/quicktabs\/quicktabs_tabstyles\/tabstyles\/arrows\/arrows.css":1,"sites\/all\/themes\/adaptivetheme\/at_core\/css\/at.layout.css":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme_abm_core\/css\/core.css":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme_abm_core\/css\/forms.css":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme_abm_core\/css\/tables.css":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme_abm_core\/css\/articles.css":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme_abm_core\/css\/blocks.css":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme_abm_core\/css\/layout.css":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme_abm_core\/css\/flexslider.css":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme_ecn\/css\/html-elements.css":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme_ecn\/css\/navigation.css":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme_ecn\/css\/skins.css":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme_ecn\/css\/ie8-and-down.css":1,"public:\/\/adaptivetheme\/adaptivetheme_ecn_files\/adaptivetheme_ecn.responsive.layout.css":1,"public:\/\/adaptivetheme\/adaptivetheme_ecn_files\/adaptivetheme_ecn.responsive.styles.css":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme_ecn\/css\/jplayer.adaptivetheme_ecn.css":1,"public:\/\/adaptivetheme\/adaptivetheme_ecn_files\/adaptivetheme_ecn.lt-ie9.layout.css":1}},"abm_cookies":{"ep":"http:\/\/api.ecnmag.com:8006\/subapi\/ul"},"abm_sitescout":{"abm_sitescout_beaconcode_0":"\u003Cscript type=\u0027text\/javascript\u0027\u003E\r\nvar ssa = \u0027c456247ddeab297a\u0027;\r\nvar ssaUrl = (\u0027https:\u0027 == document.location.protocol ? \u0027https:\/\/\u0027 : \u0027http:\/\/\u0027) + \u0027pixel.sitescout.com\/iap\/\u0027 + ssa;\r\nnew Image().src=ssaUrl;\r\n\u003C\/script\u003E","abm_sitescout_criteria_0":"2","abm_sitescout_beaconcode_1":"\u003Cscript type=\u0027text\/javascript\u0027\u003E\r\nvar ssa = \u0027f10ec86f5d5f49b0\u0027;\r\nvar ssaUrl = (\u0027https:\u0027 == document.location.protocol ? \u0027https:\/\/\u0027 : \u0027http:\/\/\u0027) + \u0027pixel.sitescout.com\/iap\/\u0027 + ssa;\r\nnew Image().src=ssaUrl;\r\n\u003C\/script\u003E","abm_sitescout_criteria_1":"2","abm_sitescout_beaconcode_2":"\u003Cscript type=\u0027text\/javascript\u0027\u003E\r\nvar ssa = \u00271871c1b72a319b08\u0027;\r\nvar ssaUrl = (\u0027https:\u0027 == document.location.protocol ? \u0027https:\/\/\u0027 : \u0027http:\/\/\u0027) + \u0027pixel.sitescout.com\/iap\/\u0027 + ssa;\r\nnew Image().src=ssaUrl;\r\n\u003C\/script\u003E","abm_sitescout_criteria_2":"0","abm_sitescout_beaconcode_3":"\u003Cscript type=\u0027text\/javascript\u0027\u003E\r\nvar ssa = \u00276fe3e6920da7e164\u0027;\r\nvar ssaUrl = (\u0027https:\u0027 == document.location.protocol ? \u0027https:\/\/\u0027 : \u0027http:\/\/\u0027) + \u0027pixel.sitescout.com\/iap\/\u0027 + ssa;\r\nnew Image().src=ssaUrl;\r\n\u003C\/script\u003E","abm_sitescout_criteria_3":"1","abm_sitescout_beaconcode_4":"\u003Cscript type=\u0027text\/javascript\u0027\u003E\r\nvar ssa = \u0027613c1da008f134a6\u0027;\r\nvar ssaUrl = (\u0027https:\u0027 == document.location.protocol ? \u0027https:\/\/\u0027 : \u0027http:\/\/\u0027) + \u0027pixel.sitescout.com\/iap\/\u0027 + ssa;\r\nnew Image().src=ssaUrl;\r\n\u003C\/script\u003E","abm_sitescout_criteria_4":"0"},"acquia_mobile_redirect":[{"domain":"ecnmag.com"}],"fancyLogin":{"screenFadeColor":"black","screenFadeZIndex":"10","loginBoxHeight":"auto","loginBoxWidth":"175px","loginBoxBackgroundColor":"#e6e6e6","loginBoxTextColor":"#191919","loginBoxBorderColor":"#005a89","loginBoxBorderWidth":"3px","loginBoxBorderStyle":"solid","loginPath":"user\/login","dimFadeSpeed":500,"boxFadeSpeed":1000,"hideObjects":0,"destination":"?destination=node\/77642","requestDestination":"?destination=node\/77642"},"disqus":{"domain":"ecnmag","url":"http:\/\/www.ecnmag.com\/articles\/2011\/09\/swipe-or-not-swipe","title":"To Swipe or Not to Swipe","identifier":"node\/77642","language":"en","sso":{"name":"Electronic Component News","url":"\/user\/login?destination=disqus\/closewindow","logout":"\/user\/logout?destination=node\/77642","width":800,"height":600,"button":"http:\/\/www.ecnmag.com\/sites\/all\/themes\/adaptivetheme\/adaptivetheme_ecn\/logo.png","icon":"http:\/\/www.ecnmag.com\/ecn_favicon.ico"},"api_key":"iBCxXBxXvIoJoVDiTIonL1OsmAbRHycnrwAnMnlewqIWbZJnIiDWoz66QSvLgLa1","remote_auth_s3":"W10= aaa7771e6cd24bf342a9c7c76d5549a7c8355238 1411566884"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"beautytips":{"calendar-tooltips":{"cssStyles":[],"cssSelect":".calendar-calendar .mini-day-on a, .calendar-calendar .day a, .calendar-calendar .mini-day-on span, .calendar-calendar .day span","contentSelector":"$(this).next().html()","trigger":["mouseover","mouseout"],"list":["cssStyles","contentSelector","trigger"]}},"quicktabs":{"qt_exclusive_content":{"name":"exclusive_content","tabs":[{"bid":"views_delta_exclusive_content-block","hide_title":1}],"disqus":{"domain":"ecnmag","url":"http:\/\/www.ecnmag.com\/articles\/2011\/09\/swipe-or-not-swipe","title":"To Swipe or Not to Swipe","identifier":"node\/77642","language":"en","sso":{"name":"Electronic Component News","url":"\/user\/login?destination=disqus\/closewindow","logout":"\/user\/logout?destination=node\/77642","width":800,"height":600,"button":"http:\/\/www.ecnmag.com\/sites\/all\/themes\/adaptivetheme\/adaptivetheme_ecn\/logo.png","icon":"http:\/\/www.ecnmag.com\/ecn_favicon.ico"},"api_key":"iBCxXBxXvIoJoVDiTIonL1OsmAbRHycnrwAnMnlewqIWbZJnIiDWoz66QSvLgLa1","remote_auth_s3":"W10= aaa7771e6cd24bf342a9c7c76d5549a7c8355238 1411566884"}},"qt_video_of_the_day":{"name":"video_of_the_day","tabs":[{"bid":"block_delta_12","hide_title":1}],"disqus":{"domain":"ecnmag","url":"http:\/\/www.ecnmag.com\/articles\/2011\/09\/swipe-or-not-swipe","title":"To Swipe or Not to Swipe","identifier":"node\/77642","language":"en","sso":{"name":"Electronic Component News","url":"\/user\/login?destination=disqus\/closewindow","logout":"\/user\/logout?destination=node\/77642","width":800,"height":600,"button":"http:\/\/www.ecnmag.com\/sites\/all\/themes\/adaptivetheme\/adaptivetheme_ecn\/logo.png","icon":"http:\/\/www.ecnmag.com\/ecn_favicon.ico"},"api_key":"iBCxXBxXvIoJoVDiTIonL1OsmAbRHycnrwAnMnlewqIWbZJnIiDWoz66QSvLgLa1","remote_auth_s3":"W10= aaa7771e6cd24bf342a9c7c76d5549a7c8355238 1411566884"}},"qt_most_popular":{"name":"most_popular","tabs":[{"bid":"disqus_delta_disqus_popular_threads","hide_title":1}],"disqus":{"domain":"ecnmag","url":"http:\/\/www.ecnmag.com\/articles\/2011\/09\/swipe-or-not-swipe","title":"To Swipe or Not to Swipe","identifier":"node\/77642","language":"en","sso":{"name":"Electronic Component News","url":"\/user\/login?destination=disqus\/closewindow","logout":"\/user\/logout?destination=node\/77642","width":800,"height":600,"button":"http:\/\/www.ecnmag.com\/sites\/all\/themes\/adaptivetheme\/adaptivetheme_ecn\/logo.png","icon":"http:\/\/www.ecnmag.com\/ecn_favicon.ico"},"api_key":"iBCxXBxXvIoJoVDiTIonL1OsmAbRHycnrwAnMnlewqIWbZJnIiDWoz66QSvLgLa1","remote_auth_s3":"W10= aaa7771e6cd24bf342a9c7c76d5549a7c8355238 1411566884"}},"qt_photo_of_the_day":{"name":"photo_of_the_day","tabs":[{"bid":"views_delta_image_of_the_day-block_1","hide_title":1}],"disqus":{"domain":"ecnmag","url":"http:\/\/www.ecnmag.com\/articles\/2011\/09\/swipe-or-not-swipe","title":"To Swipe or Not to Swipe","identifier":"node\/77642","language":"en","sso":{"name":"Electronic Component News","url":"\/user\/login?destination=disqus\/closewindow","logout":"\/user\/logout?destination=node\/77642","width":800,"height":600,"button":"http:\/\/www.ecnmag.com\/sites\/all\/themes\/adaptivetheme\/adaptivetheme_ecn\/logo.png","icon":"http:\/\/www.ecnmag.com\/ecn_favicon.ico"},"api_key":"iBCxXBxXvIoJoVDiTIonL1OsmAbRHycnrwAnMnlewqIWbZJnIiDWoz66QSvLgLa1","remote_auth_s3":"W10= aaa7771e6cd24bf342a9c7c76d5549a7c8355238 1411566884"}}}});</script>
+<!--[if lt IE 9]>
+<script src="http://www.ecnmag.com/sites/all/themes/adaptivetheme/at_core/scripts/html5.js?ncbywm"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="./To Swipe or Not to Swipe_files/widget005.old.css" media="all"><link href="http://www.ecnmag.com/articles/2011/09/undefined" rel="publisher"><link rel="stylesheet" type="text/css" href="./To Swipe or Not to Swipe_files/counter015.css" media="all"><link rel="stylesheet" type="text/css" href="./To Swipe or Not to Swipe_files/layers062.css" media="all"><link rel="stylesheet" type="text/css" href="./To Swipe or Not to Swipe_files/widget005.old.32.css" media="all"><style id="share-offset" type="text/css" media="screen">#at4-share,#at4-soc {bottom:50px;top:auto;}</style><style id="follow-offset" type="text/css" media="screen">#at4-follow,#at4-foc {bottom:50px;top:auto;}</style><link rel="stylesheet" type="text/css" href="./To Swipe or Not to Swipe_files/widget005.mobile.css" media="all"><script src="./To Swipe or Not to Swipe_files/alfie.f51946af45e0b561c60f768335c9eb79.js" async="" charset="UTF-8"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f2f2f2;border:1px solid #606060;font-size:25px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3b5998;color:#fff;font-size:15px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:13px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:13px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29447e;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:17px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f2f2f2;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fbpluginrecommendationsbarleft,.fbpluginrecommendationsbarright{position:fixed !important;bottom:0;z-index:999}.fbpluginrecommendationsbarleft{left:10px}.fbpluginrecommendationsbarright{right:10px}</style></head>
+<body class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-77642 node-type-article site-name-hidden disqus-processed" data-twttr-rendered="true"><iframe id="twttrHubFrameSecure" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" name="twttrHubFrameSecure" src="./To Swipe or Not to Swipe_files/hub(1).htm" style="position: absolute; top: -9999em; width: 10px; height: 10px;"></iframe><iframe id="twttrHubFrame" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" name="twttrHubFrame" src="./To Swipe or Not to Swipe_files/hub.htm" style="position: absolute; top: -9999em; width: 10px; height: 10px;"></iframe>
+  <div id="skip-link">
+    <a href="http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div id="page" class="container">
+
+  <div class="region region-leaderboard"><div class="region-inner clearfix"><div id="block-dfp-peelback" class="block block-dfp  no-title">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <div id="dfp-ad-peelback-wrapper" class="dfp-tag-wrapper">
+<div id="dfp-ad-peelback" class="dfp-tag-wrapper">
+  <div class="slug">&nbsp;</div>  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-peelback");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+</div>
+<div id="block-dfp-leaderboard" class="block block-dfp  no-title">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <div id="dfp-ad-leaderboard-wrapper" class="dfp-tag-wrapper">
+<div id="dfp-ad-leaderboard" class="dfp-tag-wrapper">
+  <div class="slug">Advertisement</div>  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-leaderboard");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+</div>
+</div></div>
+  <header class="clearfix">
+
+          <div id="logo"><a href="http://www.ecnmag.com/" title="Home page"><img class="site-logo image-style-none" typeof="foaf:Image" src="./To Swipe or Not to Swipe_files/logo.png" alt="Electronic Component News"></a></div>
+    
+          <hgroup class="element-invisible">
+                  <div id="site-name" class="element-invisible"><a href="http://www.ecnmag.com/" title="Home page">Electronic Component News</a></div>
+                      </hgroup>
+    
+    <div class="region region-header"><div class="region-inner clearfix"><nav id="block-system-main-menu" class="block block-system  block-menu no-title" role="navigation">
+  <div class="clearfix">
+                <div class="block-content content">
+      <ul class="menu clearfix"><li class="first leaf"><a href="http://www.ecnmag.com/" title="All" id="home-icon" class="menu_icon menu-391 menu_icon menu-390">Home</a></li><li class="leaf"><a href="http://www.ecnmag.com/topics/unmanned-aerial-vehicles">UAV</a></li><li class="leaf"><a href="http://www.ecnmag.com/topics/solid-state-lighting">SSL</a></li><li class="leaf"><a href="http://www.ecnmag.com/topics/internet-things">IoT</a></li><li class="expanded"><a href="http://www.ecnmag.com/topics/applications">Applications</a><ul class="menu clearfix"><li class="first leaf"><a href="http://www.ecnmag.com/topics/automotive">Automotive</a></li><li class="leaf"><a href="http://www.ecnmag.com/topics/communications-telecom/datacom">Communications, Telecom/Datacom</a></li><li class="leaf"><a href="http://www.ecnmag.com/topics/computing">Computing</a></li><li class="leaf"><a href="http://www.ecnmag.com/topics/consumer">Consumer</a></li><li class="leaf"><a href="http://www.ecnmag.com/topics/industrial">Industrial</a></li><li class="leaf"><a href="http://www.ecnmag.com/topics/medical">Medical</a></li><li class="leaf"><a href="http://www.ecnmag.com/topics/military-aerospace">Military &amp; Aerospace</a></li><li class="leaf"><a href="http://www.ecnmag.com/topics/power">Power</a></li><li class="last leaf"><a href="http://www.ecnmag.com/topics/wireless">Wireless</a></li></ul></li><li class="expanded"><a href="http://www.ecnmag.com/products">Products</a><ul class="menu clearfix"><li class="first leaf"><a href="http://www.ecnmag.com/product-directory">Product Directory</a></li><li class="leaf"><a href="http://www.ecnmag.com/product-categories/boards-modules">Boards &amp; Modules</a></li><li class="leaf"><a href="http://www.ecnmag.com/product-categories/computer-peripherals-networking-devices">Computer Peripherals &amp; Networking Devices</a></li><li class="leaf"><a href="http://www.ecnmag.com/product-categories/cooling-thermal-management">Cooling &amp; Thermal Management</a></li><li class="leaf"><a href="http://www.ecnmag.com/product-categories/electromechanical/mechanical-devices">Electromechanical/Mechanical Devices</a></li><li class="leaf"><a href="http://www.ecnmag.com/product-categories/enclosures-backplanes">Enclosures &amp; Backplanes</a></li><li class="leaf"><a href="http://www.ecnmag.com/product-categories/ics">ICs</a></li><li class="leaf"><a href="http://www.ecnmag.com/product-categories/optoelectronics-displays">Optoelectronics &amp; Displays</a></li><li class="leaf"><a href="http://www.ecnmag.com/product-categories/packaging-interconnects">Packaging &amp; Interconnects</a></li><li class="leaf"><a href="http://www.ecnmag.com/product-categories/passive-discrete-devices">Passive &amp; Discrete Devices</a></li><li class="leaf"><a href="http://www.ecnmag.com/product-categories/power-sources-signal-conditioning-devices">Power Sources &amp; Signal-Conditioning Devices</a></li><li class="leaf"><a href="http://www.ecnmag.com/product-categories/rf-microwave/communications">RF &amp; Microwave/Communications</a></li><li class="leaf"><a href="http://www.ecnmag.com/product-categories/sensors-actuators">Sensors &amp; Actuators</a></li><li class="leaf"><a href="http://www.ecnmag.com/product-categories/software">Software</a></li><li class="last leaf"><a href="http://www.ecnmag.com/product-categories/test-measurement">Test &amp; Measurement</a></li></ul></li><li class="leaf"><a href="http://www.ecnmag.com/topics/engineering-update">Eng. Update</a></li><li class="expanded"><a href="http://ecnawards.com/" target="_blank">IMPACT Awards</a><ul class="menu clearfix"><li class="first leaf"><a href="http://ecnawards.com/submit-entries" target="_blank">Submit Entry</a></li><li class="leaf"><a href="http://ecnawards.com/how-to-win-ecn-impact-award" target="_blank">How to Win</a></li><li class="leaf"><a href="http://ecnawards.com/submission-frequently-asked-questions" target="_blank">FAQ</a></li><li class="last leaf"><a href="http://ecnawards.com/2014-ecn-impact-awards-winners" target="_blank">2014 Winners</a></li></ul></li><li class="expanded"><span class="nolink">Resources</span><ul class="menu clearfix"><li class="first leaf"><a href="http://www.ecnmag.com/topics/ecn-editors">Editors</a></li><li class="leaf"><a href="http://www.ecnmag.com/articles">Articles</a></li><li class="leaf"><a href="http://www.ecnmag.com/blogs">Blogs</a></li><li class="leaf"><a href="http://www.ecnmag.com/company-directory">Company Directory</a></li><li class="leaf"><a href="http://www.ecnmag.com/directory">Add Your Company</a></li><li class="leaf"><a href="http://www.ecnmag.com/topics/design-tools">Design Tools</a></li><li class="leaf"><a href="http://www.ecnmag.com/digital-editions">Digital Editions</a></li><li class="leaf"><a href="http://www.ecnmag.com/topics/engineering-live">Engineering Live</a></li><li class="leaf"><a href="http://www.ecnmag.com/events">Events</a></li><li class="leaf"><a href="http://www.ecnmag.com/topics/infographics">Infographics</a></li><li class="leaf"><a href="http://www.ecnmag.com/topics/lists">Lists</a></li><li class="leaf"><a href="http://www.ecnmag.com/news">News</a></li><li class="leaf"><a href="http://www.ecnmag.com/topics/photos-day">Photos</a></li><li class="leaf"><a href="http://www.ecnmag.com/topics/reference-designs">Reference Designs</a></li><li class="leaf"><a href="http://www.ecnmag.com/topics/specification-guides-calculators">Specification Guides &amp; Calculators</a></li><li class="leaf"><a href="http://www.ecnmag.com/videos" class="nav-down-link">Videos</a></li><li class="leaf"><a href="http://www.ecnmag.com/white-papers">White Papers</a></li><li class="last leaf"><a href="http://www.ecnmag.com/webcasts">Webinars</a></li></ul></li><li class="last leaf"><a href="http://subscribe.advantagemedia.com/ecn_ods/landing.aspx?cmpid=navlink" title="Free Subscription to ECN&#39;s Magazine &amp; Newsletters!" target="_blank">Free Subscriptions</a></li></ul>    </div>
+  </div>
+</nav>
+<nav id="block-system-user-menu" class="block block-system user-menu block-menu no-title" role="navigation">
+  <div class="clearfix">
+                <div class="block-content content">
+      <ul class="menu clearfix"><li class="first leaf"><a href="http://www.ecnmag.com/company-directory">Company Profile Search</a></li><li class="leaf"><a href="http://www.ecnmag.com/user/login?destination=node/77642">Log In</a></li><li class="last leaf"><a href="http://www.ecnmag.com/user/register">Register</a></li></ul>    </div>
+  </div>
+</nav>
+</div></div>
+  </header>
+
+  <div id="menu-bar" class="nav clearfix"><div id="block-dfp-pencil-pushdown" class="block block-dfp  no-title menu-wrapper menu-bar-wrapper clearfix">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <div id="dfp-ad-pencil_pushdown-wrapper" class="dfp-tag-wrapper">
+<div id="dfp-ad-pencil_pushdown" class="dfp-tag-wrapper">
+  <div class="slug">Advertisement</div>  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-pencil_pushdown");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+</div>
+</div>    
+    
+  
+  <div id="columns"><div class="columns-inner clearfix">
+  
+     
+  
+    <div id="content-column"><div class="content-inner">
+
+           
+            <section id="main-content">
+
+                  <header>
+                                      <div id="page-type">
+                <div>Articles</div>              </div>
+                                             
+
+                      </header>
+        
+        <div id="content"><div id="block-system-main" class="block block-system  no-title">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <div class="panel-flexible panels-flexible-content clearfix">
+<div class="panel-flexible-inside panels-flexible-content-inside">
+<div class="panels-flexible-row panels-flexible-row-content-1 panels-flexible-row-first clearfix ">
+  <div class="inside panels-flexible-row-inside panels-flexible-row-content-1-inside panels-flexible-row-inside-first clearfix">
+<div class="panels-flexible-region panels-flexible-region-content-the_lead___features panels-flexible-region-first panels-flexible-region-last ">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-content-the_lead___features-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-block pane-dfp-small-banner-1 no-title block">
+  
+  
+    
+  <div class="pane-content">
+    <div id="dfp-ad-small_banner_1-wrapper" class="dfp-tag-wrapper">
+<div id="dfp-ad-small_banner_1" class="dfp-tag-wrapper">
+  <div class="slug">Advertisement</div>  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-small_banner_1");
+    });
+  </script>
+</div>
+</div>  </div>
+
+  
+  </div>
+<h1 id="node-title">To Swipe or Not to Swipe</h1><div class="panel-pane pane-node-created small quiet horizontal no-title block quiet icon-time-gray small" id="time-stamp">
+  
+  
+    
+  <div class="pane-content">
+    Thu, 09/15/2011 - 2:52pm  </div>
+
+  
+  </div>
+<div class="panel-pane pane-token pane-node-field-author small quiet horizontal fgo-8 no-title block icon-author-gray small quiet" id="author-stamp">
+  
+  
+    
+  <div class="pane-content">
+    Ahsan Javed, Silicon Laboratories, www.silabs.com  </div>
+
+  
+  </div>
+<div class="panel-pane pane-block pane-block-11 no-title block">
+  
+  
+    
+  <div class="pane-content">
+    <div class="icon-mail"><a href="http://subscribe.advantagemedia.com/ecn_ods/landing.aspx?cmpid=textadincontent" target="_blank">Get today's electronic OEM design headlines and news - Sign up now!</a></div>  </div>
+
+  
+  </div>
+<div class="panel-pane pane-node-body clear article left no-title block">
+  
+  
+    
+  <div class="pane-content">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden view-mode-_custom_display"><div class="field-items"><div class="field-item even" property="content:encoded"><img title="Ahnsan Javed" style="WIDTH: 125px; HEIGHT: 187px" alt="Ahnsan Javed" hspace="5" src="./To Swipe or Not to Swipe_files/Ahsan Javed Nov 2010web.jpg" align="left" vspace="5"><em>“We respond to gestures with an extreme alertness and, one might say, in accordance with an elaborate secret code that is written nowhere, known by none, and understood by all.”&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>– Edward Sapir, Anthropologist-Linguist</em><sup>1</sup> <br><br>Gestures are one of our most fundamental and universal forms of nonverbal communication. Whether it’s pointing to select an object out of a group, waving to say hello or curling your fingers to beckon someone to come closer, gestures play an important role in how we interact with others. The advent of human interface technologies has extended gestures to include interaction with electronics systems as well, and the explosion in smart phone growth over the past decade has placed this technology into the hands of the masses. <br><br>Unlike human-to-human gesturing, human-machine gesturing does not have a foundation of thousands of years of history to use as a context. This poses a challenge for human interface system designers. If a user performs a gesture, or a “voluntary motion of hands and/or arms to express a clear action,”<sup>2</sup> how does the machine (i.e., smart phone, tablet computer or point-of-sale device) know how to react in a manner that is commensurate with the user’s intentions? Is the action easy to replicate, and does it produce repeatable results? How can gestures be designed to be intuitively easy to comprehend rather than frustrating? How does a system designer minimize the pain of “learning” gestures for the user? <br><br>Pinch-to-zoom is one of the most universal gestures on handsets and tablets today. This gesture is used to enlarge documents, making them more readable, and to zoom in on photos, revealing additional details. In the physical world, if one was asked to “zoom in” on a photograph, the instinctive response is to move the photo closer to one’s face. Obviously the closer something is, the easier it is to discern features and minutiae. Pinch-to-zoom is now ubiquitous and is an expected feature on all modern touchscreen devices, but this was not always the case. This feature was subtly taught to consumers, and unlike other less intuitive gestures, it stuck and is now second nature.<br><br><strong>Action-Response<br><br></strong>B.F. Skinner, the famous psychologist, articulated the idea of behaviorism and reinforcers. The basic concept is that a stimulus, negative or positive, can either encourage or discourage a behavior. This concept can be applied to human interface systems and gesture design and is one of the reasons that the “swipe to scroll” gesture is so intuitive. When one is reading a book or magazine the action to “scroll” to the next page is identical to the actions required on a modern touchscreen device. Since the device operates in a predictable manner, the gesture is reinforced and learned easily. This is one reason why toddlers find it easy to interact with touchscreen systems: the action and response is predictable and instantaneous with minimal learning required and little frustration. <br><br>In contrast to current touchscreen interfaces, when the now defunct Palm introduced its Graffiti text entry system on the popular range of Palm Pilot Personal Digital Assistants (PDAs), the technology was hailed as revolutionary. The system was much more accurate than state-of-the-art handwriting recognition systems at the time and allowed relatively fast text entry without the use of a keyboard. What Palm did was to simplify the alphabet and numbers into a series of gestures that were relatively easy to remember and could be consistently recognized by their PDAs. The main issue with Graffiti was that the gestures had to start and end in a particular method and they had to be learned. Every Palm Pilot shipped with a cheat-sheet that constantly reminded users of what the correct method for entry was in order to “type” a certain character. Over time Graffiti became relatively popular, although the learning cycle was relatively complex and remained a barrier to entry for some users. <br><br><img title="alphanumeric gestures 4 PDAs" style="WIDTH: 400px; HEIGHT: 370px" alt="alphanumeric gestures 4 PDAs" hspace="5" src="./To Swipe or Not to Swipe_files/ec1110we102Fig1_web.jpg" align="left" vspace="5">Unlike Palm’s Graffiti, effective gestures are easy to remember and reproduce while providing a meaningful function that is superior to using a simple toggle or button. Most modern touchscreen handsets still use a standard QWERTY keyboard for text entry rather than using a gesture-based input system or handwriting recognition since these techniques are less efficient than tried-and-true keystroke typing.<br><br><strong>Tuning Gestures <br><br></strong>Gesture sensing is not automatic. Every gesture, whether touch or touchless, has to be tuned to the requirements of the system and the use case. Similarly, and almost as important, the system needs to be tuned to ignore inadvertent movements or false gestures. Automatic faucets and towel dispensers in public restrooms often incorporate a short delay mechanism to ensure that a hand is actually in front of the system waiting for a stream of water or a paper towel. This brief delay ensures that resources are saved and that the system does not respond erroneously to people walking by or other false inputs. On touchscreen devices, when navigating through a selection of photos, for example, scrolling through the images can be achieved with a finger but not with a palm or the side of a hand. The system is designed to recognize that a finger swipe is a valid gesture while a palm swipe is most likely an errant touch. <br><br>Many factors go into defining a gesture and the resulting action including the speed, motion and surface area. In the case of touchless gestures, using infrared proximity or other optical sensor technologies, there are other considerations such as the reflectivity surface of the detectable object, ambient light conditions and object depth. Using Silicon Labs’ IRslider2EK evaluation board as an example, the board can recognize left and right swipe gestures and also recognize set points when pausing over a certain location. Alternately if a user waves his hand slowly over the board, neither the set point nor the swipe gesture is recognized. Each of these actions has the potential to have a user interface function associated with it. <br><br><img title="IRslider2EK" style="WIDTH: 396px; HEIGHT: 158px" alt="IRslider2EK" hspace="5" src="./To Swipe or Not to Swipe_files/ec1110we102Fig2_web.jpg" align="left" vspace="5">Touch gestures have become commonplace as the popularity of smart phones has increased. Multi-touch gestures, or gestures involving two or more fingers, allow simple and easy navigation of the user interfaces of these increasingly complex devices. These multi-touch gestures include many input mechanics such as tap, swipe, pinch and un-pinch, scroll, drag, rotate and flick. <br><br>Touchless gestures, beyond simple proximity sensing, are relatively new and are implemented using slightly different techniques. While many methods such as optical imaging can be employed to achieve touchless gesture sensing, one of the most computationally and energy efficient gesture sensing techniques involves the use of an active infrared sensor and infrared LEDs (irLEDs).Touchless gesture sensing using an IR-based approach can be accomplished using a position-based approach or a phase-based approach. <br><br><img title="multi-touch gestures" style="WIDTH: 400px; HEIGHT: 233px" alt="multi-touch gestures" hspace="5" src="./To Swipe or Not to Swipe_files/ec1110we102Fig3_web.jpg" align="right" vspace="5" border="1">Position-based motion-sensing involves three primary steps: <br>* First, raw proximity data inputs are converted into usable distance data. <br>* The second step uses this distance data to estimate the position of the target object. <br>* The final step compares the timing of the position data to determine whether a gesture has occurred. <br><br>When initiating the development of such a system, a target object is held above the sensing array at a fixed distance, and the analog to digital converter (ADC) counts are noted. For example, if a hand is held a set distance away from the sensor and yields x ADC counts, then future readings of x ADC counts imply that a similar object is at that distance from the sensor. Taking these measurements across various distances provides the system designer with a good set of ADC counts to distance data. This data needs to be taken for all the irLEDs in the gesture sensing array, and some tuning will be required to ensure that the LED’s light output variation is accounted for across systems. This data is then used to estimate the position of a target above the system based on the relative reflection from the irLEDs. Finally, keeping track of the timing of the target object’s movement, direction and speed allows the system to recognize and acknowledge a valid gesture. <br><br>In a position-based system, it is critical to keep track of the time stamps for the entry, exit and current positions of the target in the detectable area -- the area around a proximity sensing system where valid measurement can be made. Most gestures can be recognized easily using this timing and position information; however, each system will need to be custom-tuned for each application and the system designer’s preference. <br><br>Phase-based gesture sensing uses solely timing data and the raw ADC output to detect gestures and never requires distances to be calculated. For a multi-LED proximity sensing system, a phase-based approach uses the changes in reflectance over the sensor and the direction of movement to acknowledge the gesture. The peak reflectance for an irLED will occur when a target object is directly above it so the direction of the swipe can be determined by which LED’s reflectance rises first. In the IRslider2EK example, when an object passes from left to right above the board, the left irLED provides peak reflectance before the right irLED so the phase system recognizes that a right swipe gesture has occurred. <br><br>Position-based gesture sensing can report back the physical location of a detectable object and thus provide some additional control over a system, such as acknowledging a hover command or “hold-to-select” gesture. This approach can be fooled, however, since the accuracy of the positional calculation is based on the shape of the infrared LED’s light output and the shape of the detectable object. For example a finger at 2 cm can reflect the same amount of light as a hand at 15 cm. The phase-based approach provides a more robust method of providing gesture recognition, but does not provide any positional information so hold-to-select gestures cannot be implemented. The best solution is a combination of the position- and phase-based approaches to leverage the benefits of both techniques to develop a truly robust gesture recognition system. <br><br>Future electronic devices will incorporate more gestures or even combinations of gestures to achieve advanced interface functions. Modern tablets and smart phones with built-in touchscreens and cameras already incorporate a plethora of sensors such as capacitive touch sensors, optical sensors, accelerometers and image sensors to interpret multiple forms of human input. Using combinations of these sensors in unison can give rise to innovative human interface experiences such as using the touchscreen to focus an embedded camera while using the proximity sensor to control the zoom level. <br><br>The advent of advanced imaging technologies such as Microsoft’s Kinect system has ushered in even more sophisticated and exciting applications for gesturing systems. Soon automobiles will be able to recognize tired drivers as their head sags; users will be able to navigate through interfaces using only their eyes; and video billboards will display proximity sensitive messages. Environmentally aware and user-aware electronics will usher in a new era of convenience and ground-breaking enhancements for all types of consumer electronics. The interactions are only limited by the human interface system designer’s imagination. <br><br><br># # # <br><br><em>Ahsan Javed joined Silicon Laboratories in 2008 to help develop the company’s emerging digital isolation business prior to transitioning to the company’s fast-growing human interface products group. Mr. Javed has more than 10 years of industry experience spanning the automotive, consumer and industrial markets. Prior to joining Silicon Labs, Mr. Javed spent eight years at Freescale Semiconductor (formerly Motorola) where he held product engineering and product marketing roles for Freescale’s microcontroller division. Mr. Javed holds a M.E.E. from Rice University and an M.B.A. from the University of Texas at Austin.</em> <br><br>1 “Nonverbal Communication in Human Interaction” By Mark L. Knapp, Judith A. Hall, Cengage Learning 2009 <a title="http://books.google.com/books?hl=en&amp;amp;lr=&amp;amp;id=j5HIIfRUPm0C&amp;amp;oi=fnd&amp;amp;pg=PR5&amp;amp;dq=human+gesture+communication&amp;amp;ots=LsuaCVPmMZ&amp;amp;sig=gLCJKRsgSVYUAfnfSTwYvx_P23I#v=onepage&amp;amp;q=gesture&amp;amp;f=false " href="http://books.google.com/books?hl=en&lr=&id=j5HIIfRUPm0C&oi=fnd&pg=PR5&dq=human+gesture+communication&ots=LsuaCVPmMZ&sig=gLCJKRsgSVYUAfnfSTwYvx_P23I#v=onepage&q=gesture&f=false" target="_blank">http://books.google.com/books?hl=en&amp;lr=&amp;id=j5HIIfRUPm0C&amp;oi=fnd&amp;pg=PR5&amp;dq=human+gesture+communication&amp;ots=LsuaCVPmMZ&amp;sig=gLCJKRsgSVYUAfnfSTwYvx_P23I#v=onepage&amp;q=gesture&amp;f=false&nbsp;<br></a>2 Device based gesture recognition Damien Zufferey, Department of Informatics (DIUF), University of Fribourg <a title="http://diuf.unifr.ch/diva/SeminarGest09/reportZufferey.pdf" href="http://diuf.unifr.ch/diva/SeminarGest09/reportZufferey.pdf" target="_blank">http://diuf.unifr.ch/diva/SeminarGest09/reportZufferey.pdf</a><br>3 <a title="http://gestureworks.com/features/open-source-gestures/ " href="http://gestureworks.com/features/open-source-gestures/" target="_blank">http://gestureworks.com/features/open-source-gestures/&nbsp;<br></a></div></div></div>  </div>
+
+  
+  </div>
+<div class="panel-pane pane-node-terms small clear block" id="contentPage-topics">
+  
+      <h2 class="pane-title">Topics</h2>
+  
+    
+  <div class="pane-content">
+    <ul class="links"><li><a href="http://www.ecnmag.com/topics/design-talk" rel="tag" title="">Design Talk</a></li><li><a href="http://www.ecnmag.com/topics/newsletters" rel="tag" title="">Newsletters</a></li><li><a href="http://www.ecnmag.com/topics/sensor-zone" rel="tag" title="">Sensor Zone</a></li><li><a href="http://www.ecnmag.com/topics/automotive" rel="tag" title="">Automotive</a></li><li><a href="http://www.ecnmag.com/topics/consumer" rel="tag" title="">Consumer</a></li><li><a href="http://www.ecnmag.com/topics/wireless" rel="tag" title="">Wireless</a></li><li><a href="http://www.ecnmag.com/topics/computing" rel="tag" title="">Computing</a></li></ul>  </div>
+
+  
+  </div>
+<div class="panel-pane pane-block pane-dfp-large-rectangle no-title block">
+  
+  
+    
+  <div class="pane-content">
+    <div id="dfp-ad-large_rectangle-wrapper" class="dfp-tag-wrapper">
+<div id="dfp-ad-large_rectangle" class="dfp-tag-wrapper">
+  <div class="slug">Advertisement</div>  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-large_rectangle");
+    });
+  </script>
+</div>
+</div>  </div>
+
+  
+  </div>
+  </div>
+</div>
+  </div>
+</div>
+<div class="panels-flexible-row panels-flexible-row-content-main-row clearfix ">
+  <div class="inside panels-flexible-row-inside panels-flexible-row-content-main-row-inside clearfix">
+<div class="panels-flexible-region panels-flexible-region-content-center panels-flexible-region-first panels-flexible-region-last ">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-content-center-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-block pane-block-81 m-title icon-google block">
+  
+      <h2 class="pane-title">Share this Story</h2>
+  
+    
+  <div class="pane-content">
+    <!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_reddit at300b" href="http://www.addthis.com/bookmark.php?v=300&winname=addthis&pub=ra-52f8e9f737d1d0cf&source=tbx-300&lng=zh-CN&s=reddit&url=http%3A%2F%2Fwww.ecnmag.com%2Farticles%2F2011%2F09%2Fswipe-or-not-swipe&title=To%20Swipe%20or%20Not%20to%20Swipe&ate=AT-ra-52f8e9f737d1d0cf/-/-/5422cd4fa1dc04ee/2&frommenu=1&uid=5422cd4fd7afd885&ct=1&tt=0&captcha_provider=nucaptcha" target="_blank" title="Reddit"><span class="at16nc at300bs at15nc at15t_reddit at16t_reddit"><span class="at_a11y">Share on reddit</span></span></a>
+<a class="addthis_button_google_plusone_badge at300b" g:plusone:size="small" title="Follow on Google+" target="_blank" style="text-decoration: none; cursor: default;"><span style=""><img src="./To Swipe or Not to Swipe_files/gplus-16.png" alt="Follow on Google+" style="border:0;width:16px;height:16px;cursor:pointer;" onmouseover="this.style.opacity=0.8;this.style.filter=&#39;alpha(opacity=80)&#39;;" onmouseout="this.style.opacity=1.0;this.style.filter=&#39;alpha(opacity=100)&#39;;"></span></a>
+<a class="addthis_button_facebook_like at300b" fb:like:layout="button_count"><div class="fb-like fb_iframe_widget" data-ref=".VCLNT7Qj5fw.like" data-layout="button_count" data-show_faces="false" data-action="like" data-width="90" data-font="arial" data-href="http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe" data-send="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=172525162793917&amp;font=arial&amp;href=http%3A%2F%2Fwww.ecnmag.com%2Farticles%2F2011%2F09%2Fswipe-or-not-swipe&amp;layout=button_count&amp;locale=zh_CN&amp;ref=.VCLNT7Qj5fw.like&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=90"><span style="vertical-align: bottom; width: 67px; height: 20px;"><iframe name="f2a8356154" width="90px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./To Swipe or Not to Swipe_files/like.htm" style="border: none; visibility: visible; width: 67px; height: 20px;" class=""></iframe></span></div></a>
+<a class="addthis_button_tweet at300b"><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="./To Swipe or Not to Swipe_files/tweet_button.1410989646.htm" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 116px; height: 20px;"></iframe></a>
+<a class="addthis_button_linkedin_counter at300b"><iframe frameborder="0" role="presentation" scrolling="no" allowtransparency="true" scrollbars="no" style="width:100px; height:18px;" src="./To Swipe or Not to Swipe_files/linkedin025.htm"></iframe></a>
+<a class="addthis_button_pinterest_pinit at300b" pi:pinit:layout="horizontal"><iframe frameborder="0" role="presentation" scrolling="no" allowtransparency="true" scrollbars="no" style="width:100px; height:25px;" src="./To Swipe or Not to Swipe_files/pinit022.htm"></iframe></a>
+<a class="addthis_counter addthis_pill_style" href="http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe#" style="display: inline-block;"><a class="atc_s addthis_button_compact"><span></span></a><a class="addthis_button_expanded" target="_blank" title="更多服务" href="http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe#"></a></a>
+<div class="atclear"></div></div>
+<script type="text/javascript" src="./To Swipe or Not to Swipe_files/addthis_widget.js">
+</script><div id="_atssh" style="visibility: hidden; height: 1px; width: 1px; position: absolute; z-index: 100000;"><iframe id="_atssh536" title="AddThis utility frame" style="height: 1px; width: 1px; position: absolute; z-index: 100000; border: 0px; left: 0px; top: 0px;" src="./To Swipe or Not to Swipe_files/sh173.htm"></iframe></div><script type="text/javascript" src="./To Swipe or Not to Swipe_files/core156.js"></script>
+<!-- AddThis Button END -->  </div>
+
+  
+  </div>
+  </div>
+</div>
+  </div>
+</div>
+<div class="panels-flexible-row panels-flexible-row-content-2 clearfix ">
+  <div class="inside panels-flexible-row-inside panels-flexible-row-content-2-inside clearfix">
+<div class="panels-flexible-region panels-flexible-region-content-comments panels-flexible-region-first panels-flexible-region-last ">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-content-comments-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-block pane-print-print-links no-title block" id="icons-print">
+  
+  
+    
+  <div class="pane-content">
+    <span class="print_html"><a href="http://www.ecnmag.com/print/articles/2011/09/swipe-or-not-swipe" title="Display a printer-friendly version of this page." class="print-page" onclick="window.open(this.href); return false" rel="nofollow"><img class="print-icon image-style-none" typeof="foaf:Image" src="./To Swipe or Not to Swipe_files/print_icon.gif" alt="Printer-friendly version" title="Printer-friendly version"></a></span><span class="print_mail"><a href="http://www.ecnmag.com/printmail/articles/2011/09/swipe-or-not-swipe" title="Send this page by email." class="print-mail" rel="nofollow"><img class="print-icon image-style-none" typeof="foaf:Image" src="./To Swipe or Not to Swipe_files/mail_icon.gif" alt="Send by email" title="Send by email"></a></span><span class="print_pdf"><a href="http://www.ecnmag.com/printpdf/articles/2011/09/swipe-or-not-swipe" title="Display a PDF version of this page." class="print-pdf" onclick="window.open(this.href); return false" rel="nofollow"><img class="print-icon image-style-none" typeof="foaf:Image" src="./To Swipe or Not to Swipe_files/pdf_icon.gif" alt="PDF version" title="PDF version"></a></span>  </div>
+
+  
+  </div>
+  </div>
+</div>
+  </div>
+</div>
+<div class="panels-flexible-row panels-flexible-row-content-3 clearfix ">
+  <div class="inside panels-flexible-row-inside panels-flexible-row-content-3-inside clearfix">
+<div class="panels-flexible-region panels-flexible-region-content-related_content panels-flexible-region-first panels-flexible-region-last ">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-content-related_content-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+  </div>
+</div>
+  </div>
+</div>
+<div class="panels-flexible-row panels-flexible-row-content-4 panels-flexible-row-last clearfix ">
+  <div class="inside panels-flexible-row-inside panels-flexible-row-content-4-inside panels-flexible-row-inside-last clearfix">
+<div class="panels-flexible-region panels-flexible-region-content-comments_ panels-flexible-region-first panels-flexible-region-last ">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-content-comments_-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-block pane-disqus-disqus-comments block">
+  
+      <h2 class="pane-title">Comments</h2>
+  
+    
+  <div class="pane-content">
+    <div id="disqus_thread"><iframe id="dsq-2" data-disqus-uid="2" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="./To Swipe or Not to Swipe_files/saved_resource.htm" style="width: 100% !important; border: none !important; overflow: hidden !important; height: 757px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe></div>  </div>
+
+  
+  </div>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+      </section>
+
+      
+    </div></div>
+
+        <div class="region region-sidebar-second sidebar"><div class="region-inner clearfix"><div id="block-search-form" class="block block-search  no-title" role="search">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <form action="./To Swipe or Not to Swipe_files/To Swipe or Not to Swipe.htm" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text">
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit"></div><input type="hidden" name="form_build_id" value="form-JTS5i322W-m0RxGkncAIDzxLNxGrn2TL_--Q0i8MmFs">
+<input type="hidden" name="form_id" value="search_block_form">
+</div>
+</div></form>    </div>
+  </div>
+</div>
+<div id="block-dfp-boombox" class="block block-dfp  no-title">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <div id="dfp-ad-boombox-wrapper" class="dfp-tag-wrapper">
+<div id="dfp-ad-boombox" class="dfp-tag-wrapper">
+  <div class="slug">Advertisement</div>  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-boombox");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+</div>
+<div id="block-dfp-boombox-2" class="block block-dfp  no-title">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <div id="dfp-ad-boombox_2-wrapper" class="dfp-tag-wrapper">
+<div id="dfp-ad-boombox_2" class="dfp-tag-wrapper">
+  <div class="slug">Advertisement</div>  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-boombox_2");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+</div>
+<div id="block-quicktabs-exclusive-content" class="block block-quicktabs  no-title">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <div id="quicktabs-exclusive_content" class="quicktabs-wrapper quicktabs-style-arrows jquery-once-1-processed"><div class="item-list"><ul class="quicktabs-tabs quicktabs-style-arrows"><li class="active"><a href="http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe?qt-exclusive_content=0#qt-exclusive_content" id="quicktabs-tab-exclusive_content-0" class="active quicktabs-loaded jquery-once-2-processed">Exclusives</a></li></ul></div><div id="quicktabs-container-exclusive_content" class="quicktabs_main quicktabs-style-arrows"><div id="quicktabs-tabpage-exclusive_content-0" class="quicktabs-tabpage "><div id="block-views-exclusive-content-block" class="block block-views  no-title">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <div class="view view-exclusive-content view-id-exclusive_content view-display-id-block view-dom-id-f151c45bf85912789f292a4a0d5352fd">
+        
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first push-down-2">
+      
+  <div class="grid-1-half">        <a href="http://www.ecnmag.com/blogs/2014/09/what-iphone-6-plus-liquid-nitrogen-looks"><img typeof="foaf:Image" class="image-style-thumbnail-portrait" src="./To Swipe or Not to Swipe_files/Kasey-web.jpg" width="60" height="72"></a>  </div>  
+  <h4>        <a href="http://www.ecnmag.com/blogs/2014/09/what-iphone-6-plus-liquid-nitrogen-looks">This is what an iPhone 6 Plus in liquid nitrogen looks like</a>  </h4>  
+  <span class="small quiet">        September 23, 2014  9:09 am  </span>      |  
+  <span class="small">    <span class="quiet">by </span>    Kasey Panetta, Managing Editor  </span>  </div>
+  <div class="views-row views-row-2 views-row-even push-down-2">
+      
+  <div class="grid-1-half">        <a href="http://www.ecnmag.com/blogs/2014/09/ecn-time-warp-november-2004"><img typeof="foaf:Image" class="image-style-thumbnail-portrait" src="./To Swipe or Not to Swipe_files/ECN November2004_600.jpg" width="60" height="72"></a>  </div>  
+  <h4>        <a href="http://www.ecnmag.com/blogs/2014/09/ecn-time-warp-november-2004">ECN Time Warp: November 2004</a>  </h4>  
+  <span class="small quiet">        September 22, 2014  10:03 am  </span>      |  
+  <span class="small">    <span class="quiet">by </span>    Chris Warner, Executive Editor  </span>  </div>
+  <div class="views-row views-row-3 views-row-odd push-down-2">
+      
+  <div class="grid-1-half">        <a href="http://www.ecnmag.com/videos/2014/09/engineering-update-episode-76-cheap-3d-printed-drone"><img typeof="foaf:Image" class="image-style-thumbnail-portrait" src="./To Swipe or Not to Swipe_files/EU76-sum_0.jpg" width="60" height="72"></a>  </div>  
+  <h4>        <a href="http://www.ecnmag.com/videos/2014/09/engineering-update-episode-76-cheap-3d-printed-drone">Engineering Update Episode 76 : A cheap 3D-printed drone</a>  </h4>  
+  <span class="small quiet">        September 19, 2014  11:55 am  </span>      |  
+  <span class="small">    <span class="quiet">by </span>    Jon Dipierro, Multimedia Production Specialist  </span>  </div>
+  <div class="views-row views-row-4 views-row-even views-row-last push-down-2">
+      
+  <div class="grid-1-half">        <a href="http://www.ecnmag.com/blogs/2014/09/5-things-look-when-evaluating-engineering-design-firm"><img typeof="foaf:Image" class="image-style-thumbnail-portrait" src="./To Swipe or Not to Swipe_files/Doug Ringer-140.jpg" width="60" height="72"></a>  </div>  
+  <h4>        <a href="http://www.ecnmag.com/blogs/2014/09/5-things-look-when-evaluating-engineering-design-firm">5 things to look for when evaluating an engineering design firm</a>  </h4>  
+  <span class="small quiet">        September 18, 2014  1:15 pm  </span>      |  
+  <span class="small">    <span class="quiet">by </span>    Doug Ringer, Contributor  </span>  </div>
+    </div>
+  
+  
+  
+  
+      
+<div class="more-link">
+  <a href="http://www.ecnmag.com/topics/exclusive-content">
+    View More Exclusive Content  </a>
+</div>
+  
+  
+  
+</div>     </div>
+  </div>
+</div>
+</div></div></div>    </div>
+  </div>
+</div>
+<div id="block-dfp-tower-half-page" class="block block-dfp  no-title">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <div id="dfp-ad-tower_half_page-wrapper" class="dfp-tag-wrapper">
+<div id="dfp-ad-tower_half_page" class="dfp-tag-wrapper">
+  <div class="slug">Advertisement</div>  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-tower_half_page");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+</div>
+<div id="block-quicktabs-video-of-the-day" class="block block-quicktabs  no-title">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <div id="quicktabs-video_of_the_day" class="quicktabs-wrapper quicktabs-style-arrows jquery-once-1-processed"><div class="item-list"><ul class="quicktabs-tabs quicktabs-style-arrows"><li class="active"><a href="http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe?qt-video_of_the_day=0#qt-video_of_the_day" id="quicktabs-tab-video_of_the_day-0" class="active quicktabs-loaded jquery-once-2-processed">Video of the Day</a></li></ul></div><div id="quicktabs-container-video_of_the_day" class="quicktabs_main quicktabs-style-arrows"><div id="quicktabs-tabpage-video_of_the_day-0" class="quicktabs-tabpage "><div id="block-block-12" class="block block-block  no-title">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <div><script src="./To Swipe or Not to Swipe_files/swfobject.js" type="text/javascript"></script><iframe src="./To Swipe or Not to Swipe_files/container.htm" style="visibility: hidden; display: none;"></iframe><div id="vid_of_the_day"><embed type="application/x-shockwave-flash" src="http://www.ecnmag.com/sites/ecnmag.com/files/legacyfiles/mediaplayer/longtailplayer/player.swf" width="296" height="241" style="undefined" id="mpl" name="mpl" quality="high" allowscriptaccess="always" wmode="opaque" flashvars="file=http://gdata.youtube.com/feeds/api/playlists/9280AE6928CED377&amp;playlist=none&amp;controlbar=bottom&amp;gapro.accountid=UA-875212-1&amp;plugins=gapro-1&amp;gapro.trackstarts=true&amp;gapro.trackpercentage=true&amp;gapro.tracktime=true&amp;gapro.trackdetails=true&amp;gapro.trackcompletes=true&amp;gapro.trackerror=true&amp;gapro.idstring=||Video of the Day||-||title||"></div><script type="text/javascript"><!--
+var s9 = new SWFObject('http://www.ecnmag.com/sites/ecnmag.com/files/legacyfiles/mediaplayer/longtailplayer/player.swf','mpl','296','241','9');
+  s9.addParam('allowscriptaccess','always');
+  s9.addParam('wmode','opaque');  
+  s9.addVariable('file','http://gdata.youtube.com/feeds/api/playlists/9280AE6928CED377');
+  s9.addVariable('playlist','none');
+  s9.addVariable('controlbar','bottom');
+  s9.addVariable('gapro.accountid','UA-875212-1');
+  s9.addVariable('plugins','gapro-1');
+  s9.addVariable('gapro.trackstarts','true');
+  s9.addVariable('gapro.trackpercentage','true');
+  s9.addVariable('gapro.tracktime','true');
+  s9.addVariable('gapro.trackdetails','true');
+  s9.addVariable('gapro.trackcompletes','true');
+  s9.addVariable('gapro.trackerror','true');
+  s9.addVariable('gapro.idstring','||Video of the Day||-||title||');
+  s9.write('vid_of_the_day');
+--></script><br></div>    </div>
+  </div>
+</div>
+</div></div></div>    </div>
+  </div>
+</div>
+<div id="block-dfp-tower-half-page-2" class="block block-dfp  no-title">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <div id="dfp-ad-tower_half_page_2-wrapper" class="dfp-tag-wrapper">
+<div id="dfp-ad-tower_half_page_2" class="dfp-tag-wrapper">
+  <div class="slug">Advertisement</div>  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-tower_half_page_2");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+</div>
+<div id="block-quicktabs-most-popular" class="block block-quicktabs  no-title">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <div id="quicktabs-most_popular" class="quicktabs-wrapper quicktabs-style-arrows jquery-once-1-processed"><div class="item-list"><ul class="quicktabs-tabs quicktabs-style-arrows"><li class="active"><a href="http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe?qt-most_popular=0#qt-most_popular" id="quicktabs-tab-most_popular-0" class="active quicktabs-loaded jquery-once-2-processed">Trending</a></li></ul></div><div id="quicktabs-container-most_popular" class="quicktabs_main quicktabs-style-arrows"><div id="quicktabs-tabpage-most_popular-0" class="quicktabs-tabpage "><div id="block-disqus-disqus-popular-threads" class="block block-disqus  no-title">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <div id="dsq-popthreads" class="dsq-widget"><script src="./To Swipe or Not to Swipe_files/popular_threads_widget.js"></script> <style type="text/css" media="screen">	 .dsq-widget ul.dsq-widget-list {	 padding: 0;	 margin: 0;	 text-align: left;	 }	 img.dsq-widget-avatar {	 border: 0px;	 margin: 0px;	 padding: 0px 3px 3px 0px;	 float: left;	 }	 a.dsq-widget-user {	 font-weight: bold;	 }	 a.dsq-widget-thread {	 font-weight: bold;	 }	 p.dsq-widget-meta {	 clear: both;	 font-size: 80%;	 padding: 0;	 margin: 0;	 }	 li.dsq-widget-item {	 margin: 15px 0;	 list-style-type: none;	 clear: both;	 }	 span.dsq-widget-clout {	 padding: 0 2px;	 background-color: #ff7300;	 color: #fff;	 }	 table.dsq-widget-horiz td {	 padding-right: 15px;	 }	 .dsq-widget-comment p {	 display: inline;	 }	 </style>	 <ul class="dsq-widget-list">	 <li class="dsq-widget-item">	 <a class="dsq-widget-thread" href="http://www.ecnmag.com/blogs/2014/09/what-iphone-6-plus-liquid-nitrogen-looks">This is what an iPhone 6 Plus in liquid nitrogen looks like</a>	 <p class="dsq-widget-meta">7 comments · 19 hours ago</p>	 </li>	 <li class="dsq-widget-item">	 <a class="dsq-widget-thread" href="http://www.ecnmag.com/blogs/2014/09/should-we-retire-10-warthog">Should we retire the A-10 Warthog?</a>	 <p class="dsq-widget-meta">35 comments · 19 hours ago</p>	 </li>	 <li class="dsq-widget-item">	 <a class="dsq-widget-thread" href="http://www.ecnmag.com/news/2014/09/photos-day-10-thunderbolt-ii">Photos of the Day: The A-10 Thunderbolt II</a>	 <p class="dsq-widget-meta">27 comments · 1 day ago</p>	 </li>	 <li class="dsq-widget-item">	 <a class="dsq-widget-thread" href="http://www.ecnmag.com/news/2014/09/businesses-and-investors-pressing-green-policy">Businesses and investors pressing for green policy</a>	 <p class="dsq-widget-meta">2 comments · 14 hours ago</p>	 </li>	 <li class="dsq-widget-item">	 <a class="dsq-widget-thread" href="http://www.ecnmag.com/news/2014/09/apple-10-million-iphone-6-and-6-plus-sold">Apple: 10 million iPhone 6 and 6 Plus sold</a>	 <p class="dsq-widget-meta">1 comment · 11 hours ago</p>	 </li>	 </ul>
+</div>    </div>
+  </div>
+</div>
+</div></div></div>    </div>
+  </div>
+</div>
+<div id="block-dfp-boombox-3" class="block block-dfp  no-title">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <div id="dfp-ad-boombox_3-wrapper" class="dfp-tag-wrapper">
+<div id="dfp-ad-boombox_3" class="dfp-tag-wrapper">
+  <div class="slug">Advertisement</div>  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-boombox_3");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+</div>
+<div id="block-dfp-boombox-4" class="block block-dfp  no-title">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <div id="dfp-ad-boombox_4-wrapper" class="dfp-tag-wrapper">
+<div id="dfp-ad-boombox_4" class="dfp-tag-wrapper">
+  <div class="slug">Advertisement</div>  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-boombox_4");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+</div>
+<div id="block-quicktabs-photo-of-the-day" class="block block-quicktabs  no-title">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <div id="quicktabs-photo_of_the_day" class="quicktabs-wrapper quicktabs-style-arrows jquery-once-1-processed"><div class="item-list"><ul class="quicktabs-tabs quicktabs-style-arrows"><li class="active"><a href="http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe?qt-photo_of_the_day=0#qt-photo_of_the_day" id="quicktabs-tab-photo_of_the_day-0" class="active quicktabs-loaded jquery-once-2-processed">Photo of the Day</a></li></ul></div><div id="quicktabs-container-photo_of_the_day" class="quicktabs_main quicktabs-style-arrows"><div id="quicktabs-tabpage-photo_of_the_day-0" class="quicktabs-tabpage "><div id="block-views-image-of-the-day-block-1" class="block block-views  no-title">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <div class="view view-image-of-the-day view-id-image_of_the_day view-display-id-block_1 view-dom-id-f7a5835b1279518072473e5db8696785">
+        
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-field-medium-landscape">        <div class="field-content"><a href="http://www.ecnmag.com/news/2014/09/photos-day-robots-given-unprecedented-dexterity"><img typeof="foaf:Image" class="image-style-medium-landscape" src="./To Swipe or Not to Swipe_files/MIT-GelSight-02.jpg" width="320" height="232"></a></div>  </div>  
+  <h4>        <a href="http://www.ecnmag.com/news/2014/09/photos-day-robots-given-unprecedented-dexterity">Photos of the Day: Robots given unprecedented dexterity</a>  </h4>  
+  <span class="small quiet">        September 23, 2014  4:12 pm  </span>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+  
+</div>     </div>
+  </div>
+</div>
+</div></div></div>    </div>
+  </div>
+</div>
+<div id="block-dfp-tower-1" class="block block-dfp small-fixed quiet ca-c no-title">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <div id="dfp-ad-tower_1-wrapper" class="dfp-tag-wrapper">
+<div id="dfp-ad-tower_1" class="dfp-tag-wrapper">
+  <div class="slug">Advertisement</div>  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-tower_1");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+</div>
+<div id="block-block-76" class="block block-block  no-title">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <!-- AddThis Smart Layers BEGIN -->
+<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+<script type="text/javascript" src="./To Swipe or Not to Swipe_files/addthis_widget.js"></script>
+<script type="text/javascript">
+  addthis.layers({
+    'theme' : 'transparent',
+    'share' : {
+      'position' : 'left',
+      'offset': {'bottom': '50px'},
+      'services' : 'facebook, twitter, google_plusone_share, linkedin, pinterest, reddit, more',
+   
+    }, 
+    'follow' : {
+       'offset': {'bottom': '50px'},
+      'services' : [
+        {'service': 'facebook', 'id': 'ECNmagazine'},
+        {'service': 'twitter', 'id': 'ecnonline'}
+      ]
+    },  
+    'whatsnext' : {}  
+  });
+</script>
+<!-- AddThis Smart Layers END -->    </div>
+  </div>
+</div>
+</div></div>
+  </div></div>
+
+  
+      <footer><div class="region region-footer"><div class="region-inner clearfix"><div id="block-abm-submodal-abm-submodal" class="block block-abm-submodal  no-title">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <a href="http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe#dialog" id="modal" visible="false"></a>
+<div id="boxes">
+  <div id="dialog" class="window container-grid-8">
+      <h1 class="billboard large-text ca-c" style="margin-bottom: .77em;">
+        Top Stories and Headlines<br><large style="font-size: 150%">EVERY DAY!</large>
+      </h1>
+      <div id="btnClose">
+        <a href="http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe#" class="close"><img src="./To Swipe or Not to Swipe_files/btnClose.png">
+        </a>
+      </div>
+      <div class="pos-r">
+        <img src="./To Swipe or Not to Swipe_files/logo_NL.png">
+      </div>
+      <h2>
+        <strong class="accentColor">FREE</strong> Email Newsletter
+      </h2>
+
+              <iframe id="MWiframe" frameborder="0" scrolling="no" src="./To Swipe or Not to Swipe_files/ModalSubscriptionDrp.htm"></iframe>
+            
+      <div class="ca-r">
+        <a href="http://www.ecnmag.com/ECN-Daily-Newsletter" target="_blank" class="reverse-text">View Sample</a> »
+      </div>
+  </div>
+
+  <!-- Mask to cover the whole screen -->
+  <div id="mask"></div>
+</div>
+<!--boxes -->
+
+    </div>
+  </div>
+</div>
+<section id="block-block-1" class="block block-block footer-links fgrid-6">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">ECN Magazine</h2>
+            <div class="block-content content">
+      <ul><li><a href="http://www.advantagemedia.com/brands/electronic-component-news#contacts" target="blank">About Us</a></li><li><a href="http://www.advantagemedia.com/brands/electronic-component-news" target="blank">Advertising Info</a></li><li><a href="http://www.ecnmag.com/contact-us">Contact Us</a></li><li><a href="http://www.ecnmag.com/content/directory-faq">Directory FAQs</a></li><li><a href="http://subscribe.advantagemedia.com/ecn_ods/landing.aspx?cmpid=footerlink" target="blank">Subscriptions</a></li><li><a href="http://www.ecnmag.com/privacy-policy">Privacy Policy</a></li><li><a href="http://www.ecnmag.com/terms-and-conditions">Terms &amp; Conditions</a></li></ul>    </div>
+  </div>
+</section>
+<section id="block-block-2" class="block block-block footer-links fgrid-6">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Resources</h2>
+            <div class="block-content content">
+      <ul><li><a href="http://www.ecnmag.com/articles">Articles</a></li><li><a href="http://www.ecnmag.com/blogs">Blogs</a></li><li><a href="http://www.ecnmag.com/digital-editions">Digital Editions</a></li><li><a href="http://www.ecnmag.com/events">Events Calendar</a></li><li><a href="http://www.ecnmag.com/news">News</a></li><li><a href="http://www.ecnmag.com/sitemap">Sitemap</a></li><li><a href="http://www.ecnmag.com/videos">Videos</a></li><li><a href="http://www.ecnmag.com/white-papers">White Papers</a></li></ul>    </div>
+  </div>
+</section>
+<section id="block-block-3" class="block block-block footer-links fgrid-6">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Topics</h2>
+            <div class="block-content content">
+      <ul><li><a href="http://www.ecnmag.com/topics/automotive">Automotive</a></li><li><a href="http://www.ecnmag.com/topics/computing">Computing</a></li><li><a href="http://www.ecnmag.com/topics/consumer">Consumer</a></li><li><a href="http://www.ecnmag.com/topics/industrial">Industrial</a></li><li><a href="http://www.ecnmag.com/topics/medical">Medical</a></li><li><a href="http://www.ecnmag.com/topics/military-aerospace">Mil/Aero</a></li><li><a href="http://www.ecnmag.com/topics/power">Power</a></li></ul>    </div>
+  </div>
+</section>
+<section id="block-block-4" class="block block-block footer-links fgrid-6bigger">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Connect With Us</h2>
+            <div class="block-content content">
+      <ul>
+<li class="icon-fb"><a href="http://www.facebook.com/pages/ECN-Magazine/353889775528" target="blank">Facebook</a></li>
+<li class="icon-t"><a href="http://www.twitter.com/ecnonline" target="blank">Twitter</a></li>
+<li class="icon-youtube"><a href="http://www.youtube.com/ecnmagazine" target="blank">YouTube</a></li>
+<li class="icon-rss"><a href="http://www.ecnmag.com/rss-feeds/all/rss.xml/all" target="blank">RSS</a></li>
+</ul>    </div>
+  </div>
+</section>
+<section id="block-block-5" class="block block-block stand-out-box grid-4-12">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Newsletters</h2>
+            <div class="block-content content">
+      <div><iframe id="myframe" src="./To Swipe or Not to Swipe_files/subscription3.htm" frameborder="0" scrolling="no" width="100%" height="100%"></iframe></div>    </div>
+  </div>
+</section>
+<section id="block-block-6" class="block block-block footer-links">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Our Partner Sites</h2>
+            <div class="block-content content">
+      <ul class="horizontal"><li class="grid-3"><a href="http://www.mdtmag.com/" target="_blank" id="partner-logo-MDT">MDT</a></li><li class="grid-3"><a href="http://www.pddnet.com/" target="_blank" id="partner-logo-PDD">Product Design &amp; Development</a></li><li class="grid-120"><a href="http://www.wirelessdesignmag.com/" target="_blank" id="partner-logo-wdd">Wireless Design &amp; Development</a></li></ul>    </div>
+  </div>
+</section>
+<div id="block-block-7" class="block block-block  no-title">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <p class="quiet">Advantage Business Media © Copyright 2014 Advantage Business Media</p>    </div>
+  </div>
+</div>
+<div id="block-block-66" class="block block-block  no-title">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+_qevents.push({
+qacct:"p-jsEPJWTckjCbE"
+});
+</script>
+
+<noscript>
+&lt;div style="display:none;"&gt;
+&lt;img src="//pixel.quantserve.com/pixel/p-jsEPJWTckjCbE.gif" border="0" height="1" width="1" alt="Quantcast"/&gt;
+&lt;/div&gt;
+</noscript>
+<!-- End Quantcast tag -->    </div>
+  </div>
+</div>
+<div id="block-dfp-wallpaper" class="block block-dfp  no-title">
+  <div class="block-inner clearfix">
+                <div class="block-content content">
+      <div id="dfp-ad-wallpaper-wrapper" class="dfp-tag-wrapper">
+<div id="dfp-ad-wallpaper" class="dfp-tag-wrapper">
+  <div class="slug">Advertisement</div>  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-wallpaper");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+</div>
+</div></div></footer>
+  
+</div><!--end page container-->
+
+  <div class="region region-page-bottom"><div class="region-inner clearfix"><div id="fancy_login_dim_screen"></div><div id="fancy_login_login_box"><div id="fancy_login_form_contents"><a href="http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe#" id="fancy_login_close_button">X</a><form action="./To Swipe or Not to Swipe_files/To Swipe or Not to Swipe.htm" method="post" id="user-login" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-name">
+  <label for="edit-name">Username or e-mail address <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-name" name="name" value="" size="60" maxlength="60" class="form-text required">
+<div class="description">You may login with either your assigned username or your e-mail address.</div>
+</div>
+<div class="form-item form-type-password form-item-pass">
+  <label for="edit-pass">Password <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" id="edit-pass" name="pass" size="60" maxlength="128" class="form-text required">
+<div class="description">The password field is case sensitive.</div>
+</div>
+<div class="form-item form-type-checkbox form-item-persistent-login">
+ <input type="checkbox" id="edit-persistent-login" name="persistent_login" value="1" class="form-checkbox">  <label class="option" for="edit-persistent-login">Remember me </label>
+
+</div>
+<input type="hidden" name="form_build_id" value="form-6W97uj_T1xpJsDzlpFDJhoh3O0In0fhorXkj7ZKHyS4">
+<input type="hidden" name="form_id" value="user_login">
+<div class="form-actions form-wrapper" id="edit-actions--2"><input type="submit" id="edit-submit--2" name="op" value="Log in" class="form-submit"></div></div></form><div class="item-list"><ul><li><a href="http://www.ecnmag.com/user/register" title="Create a new user account.">Create new account</a></li><li><a href="http://www.ecnmag.com/user/password" title="Request new password via e-mail.">Request new password</a></li></ul></div></div><div id="fancy_login_ajax_loader"><img src="./To Swipe or Not to Swipe_files/ajax-loader.gif" alt="Loading"></div></div><!-- SiteCatalyst code version: H.24.4
+Copyright 1997-2009 Omniture, Inc. More info available at http://www.omniture.com -->
+<script type="text/javascript" language="Javascript">s_account="abmecnmagdev,abmdev";</script>
+<script type="text/javascript" language="JavaScript" src="./To Swipe or Not to Swipe_files/s_code.js"></script><div id="mboxScriptContainer" style="display:none;visibility:hidden;"></div><style>.mboxDefault{visibility:hidden;}</style>
+<script type="text/javascript" language="JavaScript"><!--
+s.eVar44 = jQuery.cookie('__au') || '';
+s.linkInternalFilters="javascript:,google.com/cse,omeda.com,subscribe.advantagemedia.com,unsubscribe.advantagemedia.com,advantagemedia.com,ecnmag.com,subscriptions.ecnmag.com";
+s.prop18=s.eVar18="not logged in";
+s.prop20=s.eVar20="ecn";
+s.pageName=s.eVar11="ecn:articles:2011:09:swipe-or-not-swipe";
+s.prop1=s.eVar1="ecn:articles:2011:09:swipe-or-not-swipe";
+s.prop5=s.eVar5="articles item";
+s.eVar8=s.prop8="Ahsan Javed, Silicon Laboratories, www.silabs.com";
+s.eVar7=s.prop7="77642";
+s.eVar6=s.prop6="To Swipe or Not to Swipe";
+s.list1="design talk|newsletters|sensor zone|automotive|consumer|wireless|computing";
+s.prop37=s.eVar33="0";
+s.prop35=s.eVar35="2011-09-15";
+s.prop36=s.eVar36="2014-09-04";
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript>&lt;a href="http://www.omniture.com" title="Web Analytics"&gt;&lt;img src="http://abm.d2.sc.omtrdc.net/b/ss/abmedtmagdev/1/H.24.4--NS/0/9201689"
+height="1" width="1" border="0" alt="" /&gt;&lt;/a&gt;</noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.24.4 -->
+</div></div><script src="./To Swipe or Not to Swipe_files/js_xy9_sHukQkrJhvAv-CFWy-owpe9j0uCrJKWyX8ceSuk.js"></script>
+<script>jQuery(window).bind("load", function ()
+    {
+      var beaconcodeArray = [];
+      var criteriaArray = [];
+        
+      beaconcodeArray[0] = Drupal.settings.abm_sitescout.abm_sitescout_beaconcode_0;
+      criteriaArray[0] = Drupal.settings.abm_sitescout.abm_sitescout_criteria_0;
+    
+      beaconcodeArray[1] = Drupal.settings.abm_sitescout.abm_sitescout_beaconcode_1;
+      criteriaArray[1] = Drupal.settings.abm_sitescout.abm_sitescout_criteria_1;
+
+      beaconcodeArray[2] = Drupal.settings.abm_sitescout.abm_sitescout_beaconcode_2;
+      criteriaArray[2] = Drupal.settings.abm_sitescout.abm_sitescout_criteria_2;
+        
+      beaconcodeArray[3] = Drupal.settings.abm_sitescout.abm_sitescout_beaconcode_3;
+      criteriaArray[3] = Drupal.settings.abm_sitescout.abm_sitescout_criteria_3;
+
+      beaconcodeArray[4] = Drupal.settings.abm_sitescout.abm_sitescout_beaconcode_4;
+      criteriaArray[4] = Drupal.settings.abm_sitescout.abm_sitescout_criteria_4;
+           
+      for (i=0; i < 5; i++) { 
+         if (beaconcodeArray[i] != "") {
+           if (criteriaArray[i] == 0 && typeof s !== "undefined") {
+             // Only render beacon code for return visitors
+             if ("Repeat" == s.getNewRepeat()) {
+               jQuery("head").append(beaconcodeArray[i]);                 
+             }     
+           }
+           else if (criteriaArray[i] == 1 && typeof s !== "undefined") {
+             // Only render beacon code for product viewers
+             if ("product-releases item" == s.prop5 || "products item" == s.prop5) {
+               jQuery("head").append(beaconcodeArray[i]);
+             }   
+           }
+           else if (criteriaArray[i] == 2) {
+             // Render beacon code for all visitors
+             jQuery("head").append(beaconcodeArray[i]);
+           } 
+         } 
+      }
+    }
+  );</script>
+<script></script>
+
+
+<div id="fb-root" class=" fb_reset"><script src="./To Swipe or Not to Swipe_files/all.js" async=""></script><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./To Swipe or Not to Swipe_files/ZEbdHPQfV3x.htm" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./To Swipe or Not to Swipe_files/ZEbdHPQfV3x(1).htm" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="f164d82ca8" frameborder="0" allowtransparency="true" scrolling="no" src="./To Swipe or Not to Swipe_files/ping.htm" style="display: none;"></iframe></div></div></div><div class="at4-share-outer addthis-smartlayers addthis-smartlayers-desktop at4-hide" aria-labelledby="at4-share-label" role="region"><div id="at4-share-label">AddThis Sharing</div><div id="at4-share" class="addthis_32x32_style atss atss-left animated slideInLeft at4-show at4-hide"><a class="at4-share-btn at-svc-facebook" href="http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe#"><span class="at300bs at15nc at15t_facebook" title="Facebook">Facebook</span></a><a class="at4-share-btn at-svc-twitter" href="http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe#"><span class="at300bs at15nc at15t_twitter" title="Twitter">Twitter</span></a><a class="at4-share-btn at-svc-google_plusone_share" href="http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe#"><span class="at300bs at15nc at15t_google_plusone_share" title="Google+">Google+</span></a><a class="at4-share-btn at-svc-linkedin" href="http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe#"><span class="at300bs at15nc at15t_linkedin" title="LinkedIn">LinkedIn</span></a><a class="at4-share-btn at-svc-pinterest_share" href="http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe#"><span class="at300bs at15nc at15t_pinterest_share" title="Pinterest">Pinterest</span></a><a class="at4-share-btn at-svc-reddit" href="http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe#"><span class="at300bs at15nc at15t_reddit" title="Reddit">Reddit</span></a><a class="at4-share-btn at-svc-compact" href="http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe#"><span class="at300bs at15nc at15t_compact" title="More">More</span></a><div id="at4-scc" class="at-share-close-control ats-transparent at4-hide-content at4-show" title="Hide"><div class="at4-arrow at-left">Hide</div></div></div><div id="at4-soc" class="at-share-open-control-left ats-transparent at4-hide" title="Show"><div class="at4-arrow at-right">Show</div></div></div><div id="at4-thankyou" class="at4-thankyou at4-thankyou-background at4-hide ats-transparent at4-thankyou-desktop addthis-smartlayers animated fadeIn at4-show" role="dialog" aria-labelledby="at-thankyou-label"><div class="at4lb-inner"><a class="at4x" href="http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe#" title="Close"></a><a id="at4-palogo" class="at4-logo" href="http://www.addthis.com/?utm_source=dynpo&utm_medium=img&utm_content=AT_main_WT&utm_campaign=AT_main" title="AddThis" target="_blank">AddThis</a><a id="at4-paprivacy" class="at4-privacy" href="http://www.addthis.com/privacy/privacy-policy" title="Privacy" target="_blank">Privacy</a><div class="at4-thankyou-inner"><div id="at-thankyou-label" class="thankyou-title"></div><div class="thankyou-description"></div><div class="at4-thankyou-layer"></div></div></div></div><div class="at4-follow-outer addthis-smartlayers addthis-smartlayers-desktop at4-hide"><div id="at4-follow" class="at4-follow at4-follow-24 ats-transparent animated slideInRight at4-show at4-hide" role="region" aria-labelledby="at4-follow-label"><div id="at4-follow-label">Follow</div><div class="at4-follow-inner"><div id="at4-fcc" class="at4-follow-close-control"><div id="at4-fcc" class="at4-arrow at-right" title="Hide">Hide</div></div><div class="at4-follow-container addthis_24x24_style"><a class="aticon at-follow-btn" href="http://www.facebook.com/ECNmagazine" target="_blank"><span class="at4-icon-fw aticon-facebook" svc="facebook" svcid="ECNmagazine" title="Follow on Facebook">Facebook</span></a><a class="aticon at-follow-btn" href="http://twitter.com/ecnonline"><span class="at4-icon-fw aticon-twitter" svc="twitter" svcid="ecnonline" title="Follow on Twitter">Twitter</span></a></div></div></div><div id="at4-foc" class="at-follow-open-control ats-transparent at4-hide" style="padding-right: 17px;"><div class="at4-arrow at-left" title="Show">Show</div></div></div><div class="at4-whatsnext-outer-container addthis-smartlayers-desktop addthis-smartlayers at4-hide"><div class="at4-whatsnext-outer"><div id="at4-whatsnext" class="at4-whatsnext ats-transparent animated slideInUp at4-show at4-hide" role="region" aria-labelledby="at4-whatsnext-label"><div id="at4-whatsnext-label">AddThis What's Next</div><div class="at-whatsnext-content"><div class="at-whatsnext-content-img"><a id="at-whatsnext-img-lnk" surface="whatsnext" href="http://www.ecnmag.com/news/2014/09/photos-day-parrot-rolling-spider-mini-drone#at_pco=smlwn-1.0&at_si=5422cd4fa1dc04ee&at_ab=per-2&at_pos=0&at_tot=1"><img id="at-whatsnext-img" src="./To Swipe or Not to Swipe_files/parrot-minidrone-rolling-spider-product-photos04-sum.jpg" alt="Photos of the Day: The Parrot Rolling-spider mini drone" title="Photos of the Day: The Parrot Rolling-spider mini drone" data-secure="" style="width: 120px; height: 120px; left: 0px;"></a></div><div class="at-whatsnext-content-inner"><div class="at-h6">Recommended for you</div><div class="at-h3"><a class="at-whatsnextTitle" id="at-whatsnext-link" href="http://www.ecnmag.com/news/2014/09/photos-day-parrot-rolling-spider-mini-drone#at_pco=smlwn-1.0&at_si=5422cd4fa1dc04ee&at_ab=per-2&at_pos=0&at_tot=1" title="Photos of the Day: The Parrot Rolling-spider mini drone">Photos of the Day: The Parrot Rolling-spider mini drone</a></div><small id="at-whatsnext-dom">www.ecnmag.com</small></div><a class="at-sponsored-link" href="http://www.addthis.com/?utm_source=dyntr&utm_medium=img&utm_content=AT_main_WT&utm_campaign=AT_main" target="_blank"></a><a class="at4-logo" href="http://www.addthis.com/?utm_source=dynto&utm_medium=img&utm_content=AT_main_WT&utm_campaign=AT_main" target="_blank" title="AddThis">AddThis</a></div><div id="at4-wncc" class="at-whatsnext-close-control at4-arrow at-down at4-hide" title="Hide">Hide</div></div><div id="at4-wnoc" class="at-whatsnext-open-control at4-arrow at-up animated slideOutDown at4-hide" title="Show" style="right: 17px;">Show</div></div></div><div id="at4m-mobile-container" class="addthis-smartlayers addthis-smartlayers-mobile animated fadeIn at4-show"><div id="at4m-dock" class="at4m-dock at4m-dock-bottom ats-light at4-ma2"><a id="at4m-fb" href="http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe#"><i class="at4m-dock-follow"></i>Follow</a><a id="at4m-sb" href="http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe#"><i class="at4m-dock-share"></i>Share</a></div><div class="at4m-dock-toggle at4m-dock-bottom ats-light"><a id="at4m-dock-toggle" href="http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe#">Toggle Dock</a></div><div id="at4m-menu" class="at4m-menu ats-light"><div class="at4m-menu-inner"><div class="at4m-menu-header"><div class="at4m-menu-header-inner"><div id="at4m-menu-head">Share</div><a id="at4m-mcc" class="at4m-menu-cancel" href="http://www.ecnmag.com/articles/2011/09/swipe-or-not-swipe#">Close</a></div></div><div id="at4m-menu-body"><div id="scroller"><div class="at4m-menu-search"><input type="text" placeholder="Find a service" id="at4-searchBox"><input type="submit"><input class="at4-hide" type="cancel" id="at4-searchClear"></div><div class="at4m-menu-content"><ul id="at4m-services" class="addthis_32x32_style"></ul></div></div></div><div class="at4m-menu-footer"><div class="at4m-menu-footer-inner"><a class="at4m-menu-footer-logo" href="http://www.addthis.com/?utm_source=dynmex&utm_medium=img&utm_content=AT_main_WT&utm_campaign=AT_main" target="_blank">AddThis</a><a class="at4m-menu-footer-privacy" href="http://www.addthis.com/privacy/privacy-policy" target="_blank">Privacy</a></div></div></div></div></div></body></html>

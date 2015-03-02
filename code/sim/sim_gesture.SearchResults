@@ -1,0 +1,3 @@
+---- sw_reset Matches (2 in 1 files) ----
+Foreground.c (src\si114x):bit                     sw_reset;
+Foreground.c (src\si114x):            if( !sw_reset )

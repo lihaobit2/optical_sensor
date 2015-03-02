@@ -1,0 +1,131 @@
+/** 
+* $Id:forms.css,v 1.1.4.6 2010/10/30 23:36:25 jmburnz Exp $
+*/
+/**
+* Adaptivetheme takes a pretty heavy handed approach to form styling,
+* this is so you can have decent looking forms without having to do a
+* lot of work. The CSS is included in full,including all positioning,
+* so you can change anything you want.
+*/
+/*color properties located in skins.css*/
+form{margin:0 0 1.5em;padding:0;}
+.form-item label{font-weight:400;/*400*/
+margin-bottom:0.231em;}
+input{margin:0;}
+input[placeholder]{}
+input.title{font-size:1.385em;}
+input.text,
+input.title,
+textarea,
+select{}
+/* Focus styles for accessibility and usabiltiy. */
+.form-text:focus,
+.form-checkbox:focus,
+.form-radio:focus,
+.form-select:focus{background:#ffffdf;}
+textarea:focus{background:#fff;}
+input.text,
+input.title{padding:.25em;/*.5em*/}
+input.form-text,
+textarea{height:auto;padding:.25em .5em;/*.1em 0 0.2em 0.385em;*/}
+textarea,
+input{font-family:Arial,Helvetica,sans-serif;}
+/*further styled in skins.css*/
+.form-item,
+.form-action{margin-top:10px;margin-bottom:10px;}
+.exposed-filters .form-item{margin-top:0;margin-bottom:10px;}
+.form-item textarea.error{padding:2px;}
+.form-item .description,
+fieldset .description,
+.fieldset-layout-settings dd{font-size:0.846em;}
+span.form-required,
+span.marker{}
+#article-admin-filter ul{padding:.5em 0;}
+#edit-operation-wrapper select{margin:.5em;}
+div.resizable-textarea textarea{margin-top:0;}
+/* Fieldsets */
+fieldset{margin:10px 0;padding:10px;}
+fieldset fieldset:last-child{margin-bottom:0;}
+.form-type-radio .description,
+.form-type-checkbox .description{margin-left:0;}
+*:first-child+html fieldset{background-color:transparent;background-position:0 10px;padding:0 10px 10px;}
+*:first-child+html fieldset > .description,
+*:first-child+html fieldset .fieldset-wrapper .description{padding-top:10px;}
+fieldset legend{display:block;font-weight:400;padding:0 10px 0 0;}
+*:first-child+html fieldset legend,
+*:first-child+html fieldset.collapsed legend{display:inline;}
+html.js fieldset.collapsed{background:transparent;padding-top:5px;}
+/* Search */
+#search-block-form{height:40px;}
+#search-block-form > div{width:100%;padding:0px;height:40px;}
+#search-block-form .container-inline{}
+#edit-search-block-form-1-wrapper{}
+.form-item-search-block-form input#edit-search-block-form--2,.form-item-search-block-form{padding:0px;width:230px;height:22px;/*30px*/
+line-height:inherit;}
+div#block-search-form form#search-block-form .form-item-search-block-form input#edit-search-block-form--2{border:0 none;outline:none;margin-top:10px;margin-left:8px;}
+#search-block-form label{}
+#search-block-form input{}
+#search-block-form .form-submit{}
+form#search-block-form input#edit-search-block-form--2{border:0 none;outline:0 none;}
+form#search-block-form input#edit-search-block-form--2:focus{outline:0 none;}
+#search-block-form input#edit-submit,
+span.button input#edit-submit--2,
+#search-block-form span.button input#edit-submit--4,
+#search-block-form span.button input#edit-submit--5{text-indent:-9999px;padding:0px;cursor:pointer;}
+#search-block-form .form-text{}
+.form-item-search-block-form input.form-text,input[type="search"]{background-color:transparent;-webkit-appearance:none;/*gets rid of the default border in chrome*/}
+/* Advanced search form */
+fieldset#edit-advanced fieldset{float:left;margin:0 10px 10px 0;}
+fieldset#edit-advanced fieldset .fieldset-legend{background:none;padding-left:1em;}
+.advanced-search-submit{clear:both;}
+.search-advanced .criterion{float:none;margin:0 5px;}
+#edit-keywords-fieldset .form-item:first-child{margin-top:5px;}
+#search-form{margin:10px 0;}
+#search-form > div{}
+#search-form .container-inline{}
+#search-form label{}
+#search-form input{}
+#search-form .form-item{}
+#search-form .form-submit{}
+/* User login */
+/*******LOGIN-REGISTER LINK ******/
+/* #block-fancy-login-fancy-login-login-block{margin:0;}
+*/
+#user-login-form{}
+#user-login-form div a{/* color:white;font-weight:bold;*/}
+#user-login-form ul{margin:0;padding:0;}
+#user-login-form li.openid-link,
+#user-login-form li.user-link{text-align:center;}
+#user-login ul{margin:0 0 5px;}
+#user-login ul li{margin:0;}
+#user-login-form .item-list li{list-style:none;margin:0;}
+#user-login-form li.openid-link,
+#user-login li.openid-link{background:none;}
+.hide-label label{position:absolute !important;clip:rect(1px 1px 1px 1px);/* IE6,IE7 */
+clip:rect(1px,1px,1px,1px);background:none;}
+#user-admin-filter ul li,
+#article-admin-filter ul li{list-style:none;}
+.description{color:#555;}
+/* Tips overrides */
+.field-type-text-long fieldset{padding:10px 0;}
+.field-type-text-long fieldset .form-item{margin:0;padding:0 0 0 15px;}
+fieldset .filter-help{padding:0 15px 5px;}
+.filter-guidelines{font-size:.923em;margin:0;padding:5px 18px 10px;}
+/* Special case modules */
+#devel-switch-user-form{margin-bottom:0;}
+/******** FANCY LOGIN **************/ /*button styled in skins.css*/
+#fancy_login_form_contents span.button input#edit-submit--2,
+#fancy_login_form_contents span.button input#edit-submit--2:hover{width:76px;height:28px;border:0 none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
+/* $Id:fancy_login.css,v 1.10 2011/01/25 08:41:24 hakulicious Exp $ */
+div#fancy_login_login_box{display:none;-moz-border-radius:5px;-webkit-border-radius:5px;-khtml-border-radius:5px;}
+#fancy_login_login_box .form-item-name{margin-top:0;clear:both}
+#fancy_login_login_box #edit-actions--2{margin-bottom:0;}
+#fancy_login_login_box .item-list,#fancy_login_login_box .item-list li{list-style:none;}
+#fancy_login_ajax_loader{display:none;}
+#ssl_icon{float:right;position:relative;height:50px;width:50px;}
+#ssl_icon:hover #ssl_login_popup{display:block;}
+#ssl_icon img{margin:0;padding:0;}
+#ssl_login_popup{height:75px;width:100px;position:absolute;bottom:32px;right:-84px;display:none;background:url(../images/popup.png) no-repeat transparent;}
+#ssl_login_popup p{margin-top:75px;height:0;line-height:normal;overflow:hidden;}
+.ssl_icon_above .form-text{width:100px;}
+#user-login .form-text,#user-pass .form-text{width:100px;}

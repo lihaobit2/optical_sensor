@@ -1,0 +1,1 @@
+sinaSSOController.autoLoginCallBack2({"result":true,"userinfo":{"uniqueid":"1883203735","userid":"lihaobit@163.com","displayname":"lihaobit","userdomain":null}});

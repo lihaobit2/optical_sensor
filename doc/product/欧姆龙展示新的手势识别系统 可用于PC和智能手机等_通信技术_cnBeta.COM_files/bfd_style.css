@@ -1,0 +1,63 @@
+﻿a.bfd_img_logo{float:right;display:block;width:101px;height:13px;margin:5px 3px 0 0;background:url(http://static.baifendian.com/themes/logo/bfd_logo_ch.gif) no-repeat;overflow:hidden;}
+a.bfd_img_logo:hover{background:url(http://static.baifendian.com/themes/logo/bfd_logo_ch.gif) no-repeat 0 -14px; }
+
+ 
+.bfd_abs{
+height:40px;
+overflow:hidden;
+}
+#dt_MRecVAV{
+margin:5px 0;
+}
+
+.bfd_box_vav{
+padding:0 5px 5px 0;
+color:#666666;
+font-size:12px;
+ 
+}
+.bfd_title{
+padding:10px 0 0 0;
+}
+.bfd_title .bfd_hd{
+border-bottom:2px solid #D6D6D6;
+height:28px;
+overflow:visible;
+padding:0;
+}
+.bfd_title .bfd_hd h3{
+border-bottom:2px solid #9C9C9C;
+bottom:-2px;
+font-size:14px;
+height:26px;
+position:relative;
+color:#333333;
+float:left;
+font:bold 14px/24px 微软雅黑
+}
+.bfd_bd{
+padding-top:10px;
+
+}
+.bfd_bd .bd_r .fr a{
+color:#0066CC;
+}
+.bfd_ul{
+height:60px;
+width:430px;
+}
+.bfd_ul li{
+width:420px;
+margin:0 10px 0 0;
+float:left;
+overflow:hidden;
+height:22px;
+line-height:20px;
+white-space:nowrap;text-overflow:ellipsis;
+/* background: url("http://cache.soso.com/30d/img/discuz/dot.png") no-repeat scroll 10px 9px transparent; */
+text-indent:10px;
+}
+.bfd_ul li .bfd_name{
+color:#0066CC;
+ 
+}
